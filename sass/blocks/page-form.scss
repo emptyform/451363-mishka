@@ -4,10 +4,8 @@
 
   &__title {
     height: 178px;
-    background-color: #f1f1f1;
-    font-size: 27px;
-    line-height: 30px;
-    font-weight: bold;
+    background-color: $bg-color-gray;
+    @include f27h30b;
   }
 
 }
@@ -15,9 +13,8 @@
 .order {
 
   &__text {
-    font-size: 13px;
-    line-height: 24px;
-    color: #767676;
+    @include f13h24;
+    color: $text-color-gray-dark;
     width: 260px;
     margin: 0 auto;
     margin-top: 23px;

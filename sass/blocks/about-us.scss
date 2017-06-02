@@ -1,18 +1,15 @@
 .about-us {
 
   &__wrapper {
-    width: 260px;
-    margin: 0 auto;
+    @include width-mobile;
   }
 
   &__title {
-    font-size: 25px;
-    line-height: 30px;
-    font-weight: bold;
+    @include f25h30b;
   }
 
   &__img {
-    fill: #63d1bb;
+    fill: $bg-color-green-1;
   }
 
 }

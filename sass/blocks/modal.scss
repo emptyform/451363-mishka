@@ -1,21 +1,17 @@
 .modal {
 
   &__wrapper {
-    width: 260px;
-    margin: 0 auto;
+    @include width-mobile;
   }
 
   &__title {
-    font-size: 25px;
-    line-height: 30px;
-    font-weight: bold;
+    @include f25h30b;
     text-transform: uppercase;
     text-align: center;
   }
 
   &__name {
-    font-size: 15px;
-    line-height: 30px;
+    @include f15h30;
     text-align: center;
   }
 
@@ -28,5 +24,5 @@
 .radio-label {
   width: 80px;
   height: 50px;
-  border: 2px solid #63d1bb;
+  border: 2px solid $bg-color-green-1;
 }

@@ -1,26 +1,20 @@
 .reviews {
 
   &__wrapper {
-    width: 260px;
-    margin: 0 auto;
+    @include width-mobile;
   }
 
   &__title {
-    font-size: 25px;
-    line-height: 30px;
-    font-weight: bold;
+    @include f25h30b;
   }
 
   &__text {
-    font-size: 15px;
-    line-height: 30px;
-    color: #444;
+    @include f15h30;
+    color: $text-color-gray-dark;
   }
 
   &__author-name {
-    font-size: 17px;
-    line-height: 20px;
-    font-weight: bold;
+    @include f17h20b;
   }
 
   &__author-contact {
@@ -32,8 +26,8 @@
 
     &-item {
       height: 52px;
-      border: 2px solid #ececec;
-      background-color: #fff;
+      border: 2px solid $bg-color-gray-table;
+      background-color: $bg-color-white;
 
       &--prev {
         width: 127px;

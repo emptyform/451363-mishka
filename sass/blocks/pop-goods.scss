@@ -1,30 +1,24 @@
 .pop-goods {
 
   &__wrapper {
-    width: 260px;
-    margin: 0 auto;
+    @include width-mobile;
   }
 
   &__title {
     margin-top: 20px;
-    font-size: 25px;
-    line-height: 30px;
-    font-weight: bold;
+    @include f25h30b;
   }
 
   &__subtitle {
     margin-top: -17px;
     text-transform: uppercase;
-    color: #63d1bb;
-    font-size: 17px;
-    line-height: 20px;
-    font-weight: bold;
+    color: $bg-color-green-1;
+    @include f17h20b;
   }
 
   &__text {
-    font-size: 15px;
-    line-height: 24px;
-    color: #444;
+    @include f15h24;
+    color: $bg-color-green-1;
   }
 
   &__table {
@@ -33,7 +27,7 @@
 
   &__row {
     height: 40px;
-    border-bottom: 1px solid #ececec;
+    border-bottom: 1px solid $bg-color-gray-table;
   }
 
   &__data-left {
@@ -45,10 +39,8 @@
   }
 
   &__price {
-    font-size: 17px;
-    line-height: 24px;
-    font-weight: bold;
-    color: #444;
+    @include f17h24b;
+    color: $text-color-gray-dark;
     text-align: center;
     margin: 28px auto;
   }

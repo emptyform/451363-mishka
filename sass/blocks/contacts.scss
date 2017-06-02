@@ -1,14 +1,11 @@
 .contacts {
 
   &__wrapper {
-    width: 260px;
-    margin: 0 auto;
+    @include width-mobile;
   }
 
   &__title {
-    font-size: 18px;
-    line-height: 30px;
-    font-weight: bold;
+    @include f18h30b;
   }
 
   &__table {
@@ -17,18 +14,15 @@
 
   &__row {
     height: 40px;
-    border-bottom: 1px solid #ececec;
   }
 
   &__data-left {
     width: 78px;
-    font-size: 15px;
-    line-height: 30px;
+    @include f15h30;
   }
 
   &__data-right {
-    font-size: 15px;
-    line-height: 30px;
+    @include f15h30;
 
       &--email {
         width: 177px;

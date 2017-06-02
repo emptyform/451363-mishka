@@ -12,20 +12,18 @@
     width: 260px;
     padding-top: 74px;
     margin: 0 auto;
-    font-size: 27px;
-    line-height: 30px;
-    font-weight: bold;
+    @include f27h30b;
   }
 
   &__item {
     height: 103px;
 
     &--bg-top {
-      background-color: #63d1bb;
+      background-color: $bg-color-green-1;
     }
 
     &--bg-bottom {
-      background-color: #56c3b2;
+      background-color: $bg-color-green-2;
     }
 
   }
@@ -33,10 +31,8 @@
   &__text {
     margin-left: 30px;
     width: 110px;
-    color: #fff;
-    font-size: 19px;
-    line-height: 24px;
-    font-weight: bold;
+    color: $bg-color-white;
+    @include f19h24b;
   }
 
   &__img {
