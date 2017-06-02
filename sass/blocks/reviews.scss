@@ -1,0 +1,53 @@
+.reviews {
+
+  &__wrapper {
+    width: 260px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: bold;
+  }
+
+  &__text {
+    font-size: 15px;
+    line-height: 30px;
+    color: #444;
+  }
+
+  &__author-name {
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: bold;
+  }
+
+  &__author-contact {
+    font-size: 17px;
+  }
+
+  &__toggle {
+    margin-top: 36px;
+
+    &-item {
+      height: 52px;
+      border: 2px solid #ececec;
+      background-color: #fff;
+
+      &--prev {
+        width: 127px;
+        height: 52px;
+        border-right: none;
+      }
+
+      &--next {
+        width: 127px;
+        height: 52px;
+      }
+
+    }
+
+  }
+
+}

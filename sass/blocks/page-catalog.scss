@@ -1,0 +1,67 @@
+.page-catalog {
+
+  &__title {
+    height: 178px;
+    background-color: #f1f1f1;
+    font-size: 27px;
+    line-height: 30px;
+    font-weight: bold;
+  }
+
+}
+
+.catalog {
+  width: 260px;
+  margin: 0 auto;
+
+  &__item {
+    border: 1px solid #ededed;
+    margin-top: 30px;
+
+    &-cart {
+      width: 204px;
+      margin: 0 auto;
+    }
+
+    &-name {
+      font-size: 17px;
+      line-height: 24px;
+      font-weight: bold;
+    }
+
+    &-description {
+      font-size: 13px;
+      line-height: 30px;
+      color: #5d5d5d;
+    }
+
+    &-price {
+      font-size: 15px;
+      line-height: 24px;
+      font-weight: bold;
+    }
+
+  }
+
+}
+
+.video {
+  width: 260px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 58px;
+  border: 1px solid #ededed;
+
+  &__name {
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: bold;
+  }
+
+  &__text {
+    font-size: 13px;
+    line-height: 30px;
+    color: #5d5d5d;
+  }
+
+}

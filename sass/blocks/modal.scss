@@ -1,0 +1,32 @@
+.modal {
+
+  &__wrapper {
+    width: 260px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__name {
+    font-size: 15px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+}
+
+.radio-input {
+  display: none;
+}
+
+.radio-label {
+  width: 80px;
+  height: 50px;
+  border: 2px solid #63d1bb;
+}

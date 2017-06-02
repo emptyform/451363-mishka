@@ -1,0 +1,56 @@
+.pop-goods {
+
+  &__wrapper {
+    width: 260px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    margin-top: 20px;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: bold;
+  }
+
+  &__subtitle {
+    margin-top: -17px;
+    text-transform: uppercase;
+    color: #63d1bb;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: bold;
+  }
+
+  &__text {
+    font-size: 15px;
+    line-height: 24px;
+    color: #444;
+  }
+
+  &__table {
+    margin-bottom: 20px;
+  }
+
+  &__row {
+    height: 40px;
+    border-bottom: 1px solid #ececec;
+  }
+
+  &__data-left {
+    width: 98px;
+  }
+
+  &__data-right {
+    width: 162px;
+  }
+
+  &__price {
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #444;
+    text-align: center;
+    margin: 28px auto;
+  }
+
+}

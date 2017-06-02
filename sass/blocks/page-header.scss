@@ -1,0 +1,23 @@
+
+.page-header {
+  height: 80px;
+}
+
+.page-header {
+
+  &__logo {
+    margin-top: 20px;
+    margin-left: 116px;
+  }
+
+}
+
+.main-nav {
+
+  &__button {}
+
+  &__list {
+    display: none;
+  }
+
+}

@@ -1,0 +1,43 @@
+.contacts {
+
+  &__wrapper {
+    width: 260px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+  }
+
+  &__table {
+    margin-bottom: 20px;
+  }
+
+  &__row {
+    height: 40px;
+    border-bottom: 1px solid #ececec;
+  }
+
+  &__data-left {
+    width: 78px;
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  &__data-right {
+    font-size: 15px;
+    line-height: 30px;
+
+      &--email {
+        width: 177px;
+      }
+
+      &--adress {
+        width: 140px;
+      }
+
+  }
+
+}
