@@ -1,0 +1,55 @@
+.page-catalog {
+
+  &__title {
+    height: 178px;
+    background-color: $bg-color-gray;
+    @include f27h30b;
+  }
+
+}
+
+.catalog {
+  @include width-mobile;
+
+  &__item {
+    border: 1px solid $bg-color-gray-light;
+    margin-top: 30px;
+
+    &-cart {
+      width: 204px;
+      margin: 0 auto;
+    }
+
+    &-name {
+      @include f17h24b;
+    }
+
+    &-description {
+      @include f13h30;
+      color: $text-color-gray-dark;
+    }
+
+    &-price {
+      @include f15h24b;
+    }
+
+  }
+
+}
+
+.video {
+  width: 260px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 58px;
+  border: 1px solid $bg-color-gray-light;
+
+  &__name {
+    @include f17h24b;
+  }
+
+  &__text {
+    @include f13h30;
+  }
+
+}

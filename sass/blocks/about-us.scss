@@ -1,0 +1,15 @@
+.about-us {
+
+  &__wrapper {
+    @include width-mobile;
+  }
+
+  &__title {
+    @include f25h30b;
+  }
+
+  &__img {
+    fill: $bg-color-green-1;
+  }
+
+}

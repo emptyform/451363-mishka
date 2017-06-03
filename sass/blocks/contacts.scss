@@ -1,0 +1,37 @@
+.contacts {
+
+  &__wrapper {
+    @include width-mobile;
+  }
+
+  &__title {
+    @include f18h30b;
+  }
+
+  &__table {
+    margin-bottom: 20px;
+  }
+
+  &__row {
+    height: 40px;
+  }
+
+  &__data-left {
+    width: 78px;
+    @include f15h30;
+  }
+
+  &__data-right {
+    @include f15h30;
+
+      &--email {
+        width: 177px;
+      }
+
+      &--adress {
+        width: 140px;
+      }
+
+  }
+
+}

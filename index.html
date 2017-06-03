@@ -2,6 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Мишка</title>
   </head>
@@ -9,17 +11,17 @@
     <!-- header, menu -->
     <header class="page-header">
       <div class="page-header__top">
-        <div class="main-nav__wrapper">
-          <span class="main-nav__logo">
-            <img src="http://placehold.it/89x39" width="89" height="39" alt="Mishka">
-          </span>
+        <div class="page-header__wrapper">
+          <div class="page-header__logo">
+            <img src="img/logo-mobile.svg" width="86" height="35" alt="Mishka">
+          </div>
           <nav class="main-nav">
-            <button class="main-nav__button main-nav__button--open" type="button"><img src="http://placehold.it/21x16" width="21" height="16" alt="Меню"></button>
+            <button class="main-nav__button main-nav__button--open" type="button"><img src="img/icon-menu-open.svg" width="20" height="14" alt="Меню"></button>
             <ul class="main-nav__list">
               <li class="main-nav__item"><a href="#">Каталог товаров</a></li>
               <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
-              <li class="main-nav__item main-nav__item--search"><a href="#"><img src="http://placehold.it/73x73" width="73" height="73" alt="Поиск">Поиск по сайту</a></li>
-              <li class="main-nav__item main-nav__item--cart"><a href="#"><img src="http://placehold.it/85x79" width="85" height="79" alt="Корзина">Корзина: пока пуста</a></li>
+              <li class="main-nav__item main-nav__item--search"><a href="#"><img src="img/icon-search.svg" width="18" height="18" alt="Поиск">Поиск по сайту</a></li>
+              <li class="main-nav__item main-nav__item--cart"><a href="#"><img src="img/icon-cart.svg" width="20" height="19" alt="Корзина">Корзина: пока пуста</a></li>
             </ul>
           </nav>
         </div>
@@ -29,10 +31,12 @@
     <main class="page-main">
       <div class="page-main__wrapper">
         <div class="headline">
-          <h1 class="headline__title">Милые штуки ручной работы для дома</h1>
+          <div class="headline__wrapper">
+            <h1 class="headline__title">Милые штуки ручной работы для дома</h1>
+          </div>
           <div class="headline__goods">
-            <a href="#">Предметы интерьера<img src="http://placehold.it/42x62" width="42" height="62" alt="Предметы интерьера"></a>
-            <a href="#">Детские игрушки<img src="http://placehold.it/61x61" width="61" height="61" alt="Детские игрушки"></a>
+            <div class="headline__item headline__item--bg-top"><a href="#">Предметы интерьера<img src="img/icon-interior.svg" class="headline__img" width="42" height="62" alt="Предметы интерьера"></a></div>
+            <div class="headline__item headline__item--bg-bottom"><a href="#">Детские игрушки<img src="img/icon-toy.svg" class="headline__img" width="61" height="61" alt="Детские игрушки"></a></div>
           </div>
         </div>
       </div>
@@ -41,24 +45,22 @@
         <div class="pop-goods__wrapper">
           <h2 class="pop-goods__title">Вязаные корзинки</h2>
           <p class="pop-goods__subtitle">Товар недели</p>
-          <div class="pop-goods__description">
-            <p class="pop-goods__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-          </div>
+          <p class="pop-goods__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
           <table class="pop-goods__table">
-            <tr>
-              <td>Цвет:</td>
-              <td>&quot;Тиффани&quot;/серый</td>
+            <tr class="pop-goods__row">
+              <td class="pop-goods__data-left">Цвет:</td>
+              <td class="pop-goods__data-right">&quot;Тиффани&quot;/серый</td>
             </tr>
-            <tr>
-              <td>Диаметр:</td>
-              <td>25 см</td>
+            <tr class="pop-goods__row">
+              <td class="pop-goods__data-left">Диаметр:</td>
+              <td class="pop-goods__data-right">25 см</td>
             </tr>
-            <tr>
-              <td>Высота:</td>
-              <td>15 см</td>
+            <tr class="pop-goods__row">
+              <td class="pop-goods__data-left">Высота:</td>
+              <td class="pop-goods__data-right">15 см</td>
             </tr>
           </table>
-          <img src="http://placehold.it/260x315" width="260" height="315" alt="Вязаные корзинки">
+          <img src="/img/triple-set-mobile@1x.jpg" class="pop-goods__img" width="260" height="315" alt="Вязаные корзинки">
           <div class="pop-goods__price">Цена: 990 руб.</div>
           <button class="btn" type="submit">Заказать</button>
         </div>
@@ -69,22 +71,22 @@
           <h2 class="about-us__title">Коротко о нас:</h2>
           <ul class="about-us__list">
             <li class="about-us__item">
-              <img src="http://placehold.it/34x38" width="34" height="38" alt="Экологически чистые материалы">Экологически чистые материалы
+              <img src="img/icon-feature-1.svg" class="about-us__img" width="32" height="37" alt="Экологически чистые материалы">Экологически чистые материалы
             </li>
             <li class="about-us__item">
-              <img src="http://placehold.it/47x28" width="47" height="28" alt="Скандинавский стиль по российской цене">Скандинавский стиль по российской цене
+              <img src="img/icon-feature-3.svg" class="about-us__img" width="47" height="27" alt="Скандинавский стиль по российской цене">Скандинавский стиль по российской цене
             </li>
             <li class="about-us__item">
-              <img src="http://placehold.it/34x28" width="34" height="28" alt="Увеличивает лайки на фотографиях">Увеличивает лайки на фотографиях
+              <img src="img/icon-feature-5.svg" class="about-us__img" width="33" height="28" alt="Увеличивает лайки на фотографиях">Увеличивает лайки на фотографиях
             </li>
             <li class="about-us__item">
-              <img src="http://placehold.it/39x36" width="39" height="36" alt="Связано вручную с любовью и умилением">Связано вручную с любовью и умилением
+              <img src="img/icon-feature-2.svg" class="about-us__img" width="34" height="34" alt="Связано вручную с любовью и умилением">Связано вручную с любовью и умилением
             </li>
             <li class="about-us__item">
-              <img src="http://placehold.it/56x23" width="56" height="23" alt="Поддержка отечественного производителя">Поддержка отечественного производителя
+              <img src="img/icon-feature-4.svg" class="about-us__img" width="54" height="23" alt="Поддержка отечественного производителя">Поддержка отечественного производителя
             </li>
             <li class="about-us__item">
-              <img src="http://placehold.it/39x34" width="39" height="34" alt="Поставляется в подарочной упаковке">Поставляется в подарочной упаковке
+              <img src="img/icon-feature-6.svg" class="about-us__img" width="33" height="32" alt="Поставляется в подарочной упаковке">Поставляется в подарочной упаковке
             </li>
           </ul>
         </div>
@@ -99,8 +101,8 @@
             <p class="reviews__author-contact">@misssssiskras</p>
           </article>
           <div class="reviews__toggle">
-            <button class="reviews__toggle-item reviews__toggle-item--prev" type="button">Предыдущий</button>
-            <button class="reviews__toggle-item reviews__toggle-item--next" type="button">Следующий</button>
+            <button class="reviews__toggle-item reviews__toggle-item--prev" type="button"><img src="img/icon-right-arrow.svg"  width="50" height="26" alt="prev"></button>
+            <button class="reviews__toggle-item reviews__toggle-item--next" type="button"><img src="img/icon-right-arrow.svg"  width="50" height="26" alt="next"></button>
           </div>
           <button class="btn" type="submit">Написать</button>
         </div>
@@ -110,17 +112,17 @@
         <div class="contacts__wrapper">
           <h2 class="contacts__title">Контакты</h2>
           <table class="contacts__table">
-            <tr>
-              <td>e-mail:</td>
-              <td>info@mimimishkashop.ru</td>
+            <tr class="contacts__row">
+              <td class="contacts__data-left">e-mail:</td>
+              <td class="contacts__data-right contacts__data-right--email">info@mimimishkashop.ru</td>
             </tr>
-            <tr>
-              <td>адрес:</td>
-              <td>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
+            <tr class="contacts__row">
+              <td class="contacts__data-left">адрес:</td>
+              <td class="contacts__data-right contacts__data-right--adress">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
             </tr>
           </table>
           <div class="contacts__map">
-            <img src="http://placehold.it/320x457" width="320" height="457" alt="Карта">
+            <img src="/img/map-mobile@1x.jpg" width="320" height="457" alt="Карта">
           </div>
           <button class="btn" type="submit">Напишите нам</button>
         </div>
@@ -130,13 +132,13 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="social-links">
-          <a class="solial-links__item social-links__item--ig" title="Instagram" href="#"><img src="http://placehold.it/28x24" width="28" height="24" alt="Instagram"></a>
-          <a class="solial-links__item social-links__item--fb" title="Facebook" href="#"><img src="http://placehold.it/19x30" width="19" height="30" alt="Facebook"></a>
-          <a class="solial-links__item social-links__item--tw" title="Twitter" href="#"><img src="http://placehold.it/26x23" width="26" height="23" alt="Twitter"></a>
+          <a class="social-links__item social-links__item--ig" title="Instagram" href="#"><img src="img/icon-insta.svg" width="22" height="21" alt="Instagram"></a>
+          <a class="social-links__item social-links__item--fb" title="Facebook" href="#"><img src="img/icon-fb.svg" width="15" height="28" alt="Facebook"></a>
+          <a class="social-links__item social-links__item--tw" title="Twitter" href="#"><img src="img/icon-twitter.svg" width="23" height="20" alt="Twitter"></a>
         </div>
         <div class="page-footer__copyright">
           <a class="page-footer__htmlacademy" href="https://htmlacademy.ru/intensive/adaptive">
-            <p class="page-footer__htmlacademy-text">Разработано<img src="http://placehold.it/28x37" width="28" height="37" alt="htmlacademy"></p>
+            <p class="page-footer__htmlacademy-text">Разработано<img src="img/logo-htmlacademy.svg" class="page-footer__htmlacademy-logo" width="27" height="34" alt="htmlacademy"></p>
           </a>
         </div>
       </div>
@@ -148,13 +150,13 @@
         <form class="modal__form" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="modal__fieldset">
             <legend class="modal__name">Выберите размер:</legend>
-            <label for="small">S</label>
-            <input type="radio" id="small" name="size" value="S">
-            <label for="medium">M</label>
-            <input type="radio" id="medium" name="size" value="M">
-            <label for="large">L</label>
-            <input type="radio" id="large" name="size" value="L">
-            <button class="btn" type="submit">Добавить</button>
+            <label for="small" class="radio-label">S</label>
+            <input type="radio" class="radio-input" id="small" name="size" value="S">
+            <label for="medium" class="radio-label">M</label>
+            <input type="radio" class="radio-input" id="medium" name="size" value="M">
+            <label for="large" class="radio-label">L</label>
+            <input type="radio" class="radio-input" id="large" name="size" value="L">
+            <button class="btn btn--modal" type="submit">Добавить</button>
           </fieldset>
         </form>
       </div>

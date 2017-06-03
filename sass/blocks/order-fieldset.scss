@@ -1,0 +1,29 @@
+.order__fieldset {
+  @include width-mobile;
+
+  &-name {
+    @include f17h16b;
+    color: $bg-color-green-1;
+  }
+
+}
+
+.input {
+  border-bottom: 2px solid $text-color-black;
+  margin-bottom: 18px;
+
+  &__label {
+    @include f17h18b;
+    color: $text-color-black;
+
+    &--name{
+      color: $bg-color-green-1;
+    }
+
+  }
+
+  &__text {
+    @include f17h16;
+    color: $text-color-gray-light;
+  }
+}

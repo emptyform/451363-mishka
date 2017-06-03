@@ -1,0 +1,99 @@
+@mixin clearfix {
+
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+}
+
+@mixin width-mobile {
+  width: 260px;
+  margin: 0 auto;
+}
+
+@mixin f13h24 {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+@mixin f13h30 {
+  font-size: 13px;
+  line-height: 30px;
+}
+
+@mixin f15h24 {
+  font-size: 15px;
+  line-height: 24px;
+}
+
+@mixin f15h24b {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+@mixin f15h30 {
+  font-size: 15px;
+  line-height: 30px;
+}
+
+@mixin f17h16 {
+  font-size: 17px;
+  line-height: 16px;
+}
+
+@mixin f17h16b {
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+}
+
+@mixin f17h18b {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+@mixin f17h20b {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+}
+
+@mixin f17h24b {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+@mixin f18h30b {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+@mixin f19h18b {
+  font-size: 19px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+@mixin f19h24b {
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+@mixin f25h30b {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+@mixin f27h30b {
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: bold;
+}

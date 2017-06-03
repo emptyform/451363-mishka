@@ -1,0 +1,24 @@
+.page-form {
+
+  &__wrapper {}
+
+  &__title {
+    height: 178px;
+    background-color: $bg-color-gray;
+    @include f27h30b;
+  }
+
+}
+
+.order {
+
+  &__text {
+    @include f13h24;
+    color: $text-color-gray-dark;
+    width: 260px;
+    margin: 0 auto;
+    margin-top: 23px;
+    margin-bottom: 23px;
+  }
+
+}

@@ -1,0 +1,28 @@
+.modal {
+
+  &__wrapper {
+    @include width-mobile;
+  }
+
+  &__title {
+    @include f25h30b;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__name {
+    @include f15h30;
+    text-align: center;
+  }
+
+}
+
+.radio-input {
+  display: none;
+}
+
+.radio-label {
+  width: 80px;
+  height: 50px;
+  border: 2px solid $bg-color-green-1;
+}
