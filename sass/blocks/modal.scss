@@ -1,4 +1,5 @@
 .modal {
+  display: none;
 
   &__wrapper {
     @include width-mobile;

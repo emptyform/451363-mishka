@@ -13,3 +13,37 @@
   }
 
 }
+
+@media (min-width: 768px) {
+  .about-us {
+
+    &__wrapper {
+      @include width-tablet;
+    }
+
+    &__title {}
+
+    &__item {
+      width: 300px;
+    }
+
+    &__img {}
+
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .about-us {
+
+    &__wrapper {
+      @include width-desktop;
+    }
+
+    &__title {}
+
+    &__img {}
+
+  }
+
+}

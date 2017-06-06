@@ -13,6 +13,16 @@
   margin: 0 auto;
 }
 
+@mixin width-tablet {
+  width: 668px;
+  margin: 0 auto;
+}
+
+@mixin width-desktop {
+  width: 1050px;
+  margin: 0 auto;
+}
+
 @mixin f13h24 {
   font-size: 13px;
   line-height: 24px;

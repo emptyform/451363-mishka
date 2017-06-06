@@ -10,21 +10,21 @@
   <body>
     <!-- header, menu -->
     <header class="page-header">
-      <div class="page-header__top">
-        <div class="page-header__wrapper">
-          <div class="page-header__logo">
-            <img src="img/logo-mobile.svg" width="86" height="35" alt="Mishka">
-          </div>
-          <nav class="main-nav">
-            <button class="main-nav__button main-nav__button--open" type="button"><img src="img/icon-menu-open.svg" width="20" height="14" alt="Меню"></button>
-            <ul class="main-nav__list">
-              <li class="main-nav__item"><a href="#">Каталог товаров</a></li>
-              <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
-              <li class="main-nav__item main-nav__item--search"><a href="#"><img src="img/icon-search.svg" width="18" height="18" alt="Поиск">Поиск по сайту</a></li>
-              <li class="main-nav__item main-nav__item--cart"><a href="#"><img src="img/icon-cart.svg" width="20" height="19" alt="Корзина">Корзина: пока пуста</a></li>
-            </ul>
-          </nav>
+      <div class="page-header__wrapper">
+        <div class="page-header__logo">
+          <img src="img/logo-mobile.svg" class="page-header__logo--mobile" width="86" height="35" alt="Mishka">
+          <img src="img/logo-mobile.svg" class="page-header__logo--tablet" width="113" height="46" alt="Mishka">
+          <img src="img/logo-mobile.svg" class="page-header__logo--desktop" width="149" height="72" alt="Mishka">
         </div>
+        <nav class="main-nav">
+          <button class="main-nav__button main-nav__button--open" type="button"><img src="img/icon-menu-open.svg" width="20" height="14" alt="Меню"></button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="#">Каталог товаров</a></li>
+            <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
+            <li class="main-nav__item main-nav__item--search"><a href="#"><img src="img/icon-search.svg" width="18" height="18" alt="Поиск">Поиск по сайту</a></li>
+            <li class="main-nav__item main-nav__item--cart"><a href="#"><img src="img/icon-cart.svg" width="20" height="19" alt="Корзина">Корзина: пока пуста</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
     <!-- main, headline -->
@@ -60,9 +60,11 @@
               <td class="pop-goods__data-right">15 см</td>
             </tr>
           </table>
-          <img src="/img/triple-set-mobile@1x.jpg" class="pop-goods__img" width="260" height="315" alt="Вязаные корзинки">
+          <img src="/img/triple-set-mobile@1x.jpg" class="pop-goods__img-mobile" width="260" height="315" alt="Вязаные корзинки">
           <div class="pop-goods__price">Цена: 990 руб.</div>
           <button class="btn" type="submit">Заказать</button>
+          <img src="/img/triple-set-mobile@1x.jpg" class="pop-goods__img-tablet" width="333" height="404" alt="Вязаные корзинки">
+          <img src="/img/triple-set-mobile@1x.jpg" class="pop-goods__img-desktop" width="525" height="636" alt="Вязаные корзинки">
         </div>
       </section>
       <!-- Коротко о нас -->
@@ -104,7 +106,7 @@
             <button class="reviews__toggle-item reviews__toggle-item--prev" type="button"><img src="img/icon-right-arrow.svg"  width="50" height="26" alt="prev"></button>
             <button class="reviews__toggle-item reviews__toggle-item--next" type="button"><img src="img/icon-right-arrow.svg"  width="50" height="26" alt="next"></button>
           </div>
-          <button class="btn" type="submit">Написать</button>
+          <button class="btn btn--reviews" type="submit">Написать</button>
         </div>
       </section>
       <!-- Контакты -->
@@ -122,15 +124,20 @@
             </tr>
           </table>
           <div class="contacts__map">
-            <img src="/img/map-mobile@1x.jpg" width="320" height="457" alt="Карта">
+            <img src="/img/map-mobile@1x.jpg" class="contacts__map--mobile" width="320" height="457" alt="Карта">
+            <img src="/img/map-mobile@1x.jpg" class="contacts__map--tablet" width="768" height="457" alt="Карта">
+            <img src="/img/map-mobile@1x.jpg" class="contacts__map--desktop" width="525" height="457" alt="Карта">
           </div>
-          <button class="btn" type="submit">Напишите нам</button>
+          <button class="btn btn--contacts" type="submit">Напишите нам</button>
         </div>
       </section>
     </main>
     <!-- footer -->
     <footer class="page-footer">
       <div class="page-footer__wrapper">
+        <div class="page-footer__logo">
+          <img src="img/logo-mobile.svg" class="page-footer__logo" width="102" height="34" alt="Mishka">
+        </div>
         <div class="social-links">
           <a class="social-links__item social-links__item--ig" title="Instagram" href="#"><img src="img/icon-insta.svg" width="22" height="21" alt="Instagram"></a>
           <a class="social-links__item social-links__item--fb" title="Facebook" href="#"><img src="img/icon-fb.svg" width="15" height="28" alt="Facebook"></a>

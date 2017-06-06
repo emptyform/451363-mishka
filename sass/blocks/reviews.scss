@@ -45,3 +45,68 @@
   }
 
 }
+
+@media (min-width: 768px) {
+  .reviews {
+    background: url(/img/review@1x.jpg) no-repeat;
+
+    &__wrapper {
+      @include width-tablet;
+    }
+
+    &__title {}
+
+    &__text {}
+
+    &__author-name {}
+
+    &__author-contact {}
+
+    &__toggle {
+      margin-top: 36px;
+
+      &-item {
+
+        &--prev {}
+
+        &--next {}
+
+      }
+
+    }
+
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .reviews {
+
+    &__wrapper {
+      @include width-desktop;
+    }
+
+    &__title {}
+
+    &__text {}
+
+    &__author-name {}
+
+    &__author-contact {}
+
+    &__toggle {
+      margin-top: 36px;
+
+      &-item {
+
+        &--prev {}
+
+        &--next {}
+
+      }
+
+    }
+
+  }
+
+}

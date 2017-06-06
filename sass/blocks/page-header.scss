@@ -1,23 +1,65 @@
-
 .page-header {
-  height: 80px;
-}
 
-.page-header {
+  &__wrapper {
+    height: 80px;
+    display: flex;
+    align-items: center;
+  }
 
   &__logo {
-    margin-top: 20px;
-    margin-left: 116px;
+
+    &--mobile {
+      margin-left: 116px;
+    }
+
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: none;
+    }
+
   }
 
 }
 
 .main-nav {
 
-  &__button {}
+  &__button {
+    margin-top: 7px;
+    margin-left: 50px;
+  }
 
   &__list {
     display: none;
   }
 
+}
+
+@media (min-width: 768px) {
+  .page-header {
+
+    &__wrapper {
+      height: 88px;
+      @include width-tablet;
+    }
+
+    &__logo {
+
+      &--mobile {
+        display: none;
+      }
+
+      &--tablet {
+        display: block;
+      }
+
+      &--desktop {
+        display: none;
+      }
+
+    }
+
+  }
 }

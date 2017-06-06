@@ -41,3 +41,29 @@
   }
 
 }
+
+@media (min-width: 768px) {
+
+  .headline {
+
+    &__item {
+      height: 118px;
+      width: 334px;
+    }
+
+  }
+
+}
+
+@media (min-width: 1200px) {
+
+  .headline {
+
+    &__item {
+      height: 118px;
+      width: 525px;
+    }
+
+  }
+
+}

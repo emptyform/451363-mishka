@@ -16,8 +16,7 @@
     margin-top: 30px;
 
     &-cart {
-      width: 204px;
-      margin: 0 auto;
+      @include width-mobile;
     }
 
     &-name {
@@ -35,11 +34,24 @@
 
   }
 
+  &__img {
+
+    &-mobile {}
+
+    &-tablet {
+      display: none;
+    }
+
+    &-desktop {
+      display: none;
+    }
+
+  }
+
 }
 
 .video {
-  width: 260px;
-  margin: 0 auto;
+  @include width-mobile;
   margin-top: 30px;
   margin-bottom: 58px;
   border: 1px solid $bg-color-gray-light;
@@ -50,6 +62,168 @@
 
   &__text {
     @include f13h30;
+  }
+
+  &__img {
+
+    &-mobile {}
+
+    &-tablet {
+      display: none;
+    }
+
+    &-desktop {
+      display: none;
+    }
+
+  }
+
+}
+
+@media (min-width: 768px) {
+  .page-catalog {
+
+    &__title {}
+
+  }
+
+  .catalog {
+    @include width-tablet;
+
+    &__item {
+
+
+      &-cart {
+        width: 320px;
+        display: inline-block;
+      }
+
+      &-name {}
+
+      &-description {}
+
+      &-price {
+        display: inline-block;
+      }
+
+    }
+
+    &__img {
+
+      &-mobile {
+        display: none;
+      }
+
+      &-tablet {
+        display: inline-block;
+      }
+
+      &-desktop {
+        display: none;
+      }
+
+    }
+
+  }
+
+  .video {
+    @include width-tablet;
+
+    &__name {
+      display: inline-block;
+    }
+
+    &__text {
+      display: inline-block;
+    }
+
+    &__img {
+
+      &-mobile {
+        display: none;
+      }
+
+      &-tablet {
+        display: inline-block;
+      }
+
+      &-desktop {
+        display: none;
+      }
+
+    }
+
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .page-catalog {
+
+    &__title {}
+
+  }
+
+  .catalog {
+    @include width-desktop;
+
+    &__item {
+
+
+      &-cart {
+        width: 300px;
+        display: block;;
+      }
+
+      &-name {}
+
+      &-description {}
+
+      &-price {}
+
+    }
+
+    &__img {
+
+      &-mobile {
+        display: none;
+      }
+
+      &-tablet {
+        display: none;
+      }
+
+      &-desktop {
+        display: block;
+      }
+
+    }
+
+  }
+
+  .video {
+
+
+    &__name {}
+
+    &__text {}
+
+    &__img {
+
+      &-mobile {
+        display: none;
+      }
+
+      &-tablet {
+        display: none;
+      }
+
+      &-desktop {
+        display: block;
+      }
+
+    }
+
   }
 
 }
