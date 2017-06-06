@@ -22,7 +22,7 @@
 
 }
 
-@media (min-width: 768px) {
+@media tablet {
   .page-form {
 
     &__wrapper {
@@ -42,7 +42,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media desktop {
   .page-form {
 
     &__wrapper {

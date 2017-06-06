@@ -29,7 +29,7 @@
 
 }
 
-@media (min-width: 768px) {
+@media tablet {
   .order__fieldset {
     @include width-tablet;
 
@@ -53,7 +53,7 @@
 
 }
 
-@media (min-width: 1200px) {
+@media desktop {
   .order__fieldset {
     @include width-desktop;
 

@@ -37,7 +37,7 @@
 
 }
 
-@media (min-width: 768px) {
+@media tablet {
   .page-header {
 
     &__wrapper {
@@ -62,4 +62,33 @@
     }
 
   }
+
+}
+
+@media desktop {
+  .page-header {
+
+    &__wrapper {
+      height: 88px;
+      @include width-desktop;
+    }
+
+    &__logo {
+
+      &--mobile {
+        display: none;
+      }
+
+      &--tablet {
+        display: none;
+      }
+
+      &--desktop {
+        display: block;
+      }
+
+    }
+
+  }
+
 }

@@ -46,7 +46,7 @@
 
 }
 
-@media (min-width: 768px) {
+@media tablet {
   .reviews {
     background: url(/img/review@1x.jpg) no-repeat;
 
@@ -79,7 +79,7 @@
 
 }
 
-@media (min-width: 1200px) {
+@media desktop {
   .reviews {
 
     &__wrapper {
