@@ -6,12 +6,19 @@
   text-transform: uppercase;
   @include f17h20b;
   cursor: pointer;
-  margin: 40px 32px;
 
   &--modal {
     background-color: $bg-color-green-1;
     border: 2px solid $bg-color-green-1;
     color: $bg-color-white;
+  }
+
+  &--reviews {
+    margin: 40px auto;
+  }
+
+  &--contacts {
+    margin: 40px 30px;
   }
 
 }

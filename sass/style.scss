@@ -4,6 +4,8 @@
 @import "sass/global/layout";
 @import "sass/global/fonts";
 
+@import "sass/blocks/modal";
+@import "sass/blocks/btn";
 @import "sass/blocks/page-header";
 @import "sass/blocks/page-main";
 @import "sass/blocks/pop-goods";
@@ -11,8 +13,6 @@
 @import "sass/blocks/reviews";
 @import "sass/blocks/contacts";
 @import "sass/blocks/page-footer";
-@import "sass/blocks/modal";
-@import "sass/blocks/btn";
 @import "sass/blocks/page-form";
 @import "sass/blocks/order-fieldset";
 @import "sass/blocks/page-catalog";

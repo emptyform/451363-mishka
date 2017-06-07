@@ -1,14 +1,14 @@
 .contacts {
 
-  &__wrapper {
-    @include width-mobile;
-  }
+  &__wrapper {}
 
   &__title {
+    @include width-mobile;
     @include f18h30b;
   }
 
   &__table {
+    @include width-mobile;
     margin-bottom: 20px;
   }
 
@@ -31,6 +31,106 @@
       &--adress {
         width: 140px;
       }
+
+  }
+
+  &__map {
+
+    &--mobile {}
+
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: none;
+    }
+
+  }
+
+}
+
+@media tablet {
+  .contacts {
+
+    &__wrapper {}
+
+    &__title {
+      @include width-tablet;
+    }
+
+    &__table {}
+
+    &__row {}
+
+    &__data-left {}
+
+    &__data-right {
+
+        &--email {}
+
+        &--adress {}
+
+    }
+
+    &__map {
+
+      &--mobile {
+        display: none;
+      }
+
+      &--tablet {
+        display: block;
+      }
+
+      &--desktop {
+        display: none;
+      }
+
+    }
+
+  }
+
+}
+
+@media desktop {
+  .contacts {
+
+    &__wrapper {}
+
+    &__title {
+      @include width-desktop;
+    }
+
+    &__table {}
+
+    &__row {}
+
+    &__data-left {}
+
+    &__data-right {
+
+        &--email {}
+
+        &--adress {}
+
+    }
+
+    &__map {
+
+      &--mobile {
+        display: none;
+      }
+
+      &--tablet {
+        display: none;
+      }
+
+      &--desktop {
+        display: block;
+      }
+
+    }
 
   }
 

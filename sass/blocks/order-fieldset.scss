@@ -26,4 +26,53 @@
     @include f17h16;
     color: $text-color-gray-light;
   }
+
+}
+
+@media tablet {
+  .order__fieldset {
+    @include width-tablet;
+
+    &-name {}
+
+  }
+
+  .input {
+
+
+    &__label {
+
+
+      &--name{}
+
+    }
+
+    &__text {}
+
+  }
+
+}
+
+@media desktop {
+  .order__fieldset {
+    @include width-desktop;
+
+    &-name {}
+
+  }
+
+  .input {
+
+
+    &__label {
+
+
+      &--name{}
+
+    }
+
+    &__text {}
+
+  }
+
 }

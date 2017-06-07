@@ -45,3 +45,68 @@
   }
 
 }
+
+@media tablet {
+  .reviews {
+    background: url(/img/review@1x.jpg) no-repeat;
+
+    &__wrapper {
+      @include width-tablet;
+    }
+
+    &__title {}
+
+    &__text {}
+
+    &__author-name {}
+
+    &__author-contact {}
+
+    &__toggle {
+      margin-top: 36px;
+
+      &-item {
+
+        &--prev {}
+
+        &--next {}
+
+      }
+
+    }
+
+  }
+
+}
+
+@media desktop {
+  .reviews {
+
+    &__wrapper {
+      @include width-desktop;
+    }
+
+    &__title {}
+
+    &__text {}
+
+    &__author-name {}
+
+    &__author-contact {}
+
+    &__toggle {
+      margin-top: 36px;
+
+      &-item {
+
+        &--prev {}
+
+        &--next {}
+
+      }
+
+    }
+
+  }
+
+}

@@ -2,6 +2,8 @@
 
   &__wrapper {
     @include width-mobile;
+    display: flex;
+    flex-direction: column;
   }
 
   &__title {
@@ -18,7 +20,7 @@
 
   &__text {
     @include f15h24;
-    color: $bg-color-green-1;
+    color: $text-color-gray-dark;
   }
 
   &__table {
@@ -43,6 +45,110 @@
     color: $text-color-gray-dark;
     text-align: center;
     margin: 28px auto;
+  }
+
+  &__img {
+
+    &-mobile {}
+
+    &-tablet {
+      display: none;
+    }
+
+    &-desktop {
+      display: none;
+    }
+
+  }
+
+}
+
+@media tablet {
+  .pop-goods {
+
+    &__wrapper {
+      @include width-tablet;
+    }
+
+    &__title {
+      margin-top: 55px;
+    }
+
+    &__subtitle {}
+
+    &__text {}
+
+    &__table {}
+
+    &__row {}
+
+    &__data-left {}
+
+    &__data-right {}
+
+    &__price {}
+
+    &__img {
+
+      &-mobile {
+        display: none;
+      }
+
+      &-tablet {
+        display: block;
+      }
+
+      &-desktop {
+        display: none;
+      }
+
+    }
+
+  }
+
+}
+
+@media desktop {
+  .pop-goods {
+
+    &__wrapper {
+      @include width-desktop;
+    }
+
+    &__title {
+      margin-top: 55px;
+    }
+
+    &__subtitle {}
+
+    &__text {}
+
+    &__table {}
+
+    &__row {}
+
+    &__data-left {}
+
+    &__data-right {}
+
+    &__price {}
+
+    &__img {
+
+      &-mobile {
+        display: none;
+      }
+
+      &-tablet {
+        display: none;
+      }
+
+      &-desktop {
+        display: block;
+      }
+
+    }
+
   }
 
 }

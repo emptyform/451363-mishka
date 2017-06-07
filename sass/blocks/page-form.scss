@@ -15,10 +15,49 @@
   &__text {
     @include f13h24;
     color: $text-color-gray-dark;
-    width: 260px;
-    margin: 0 auto;
+    @include width-mobile;
     margin-top: 23px;
     margin-bottom: 23px;
   }
 
+}
+
+@media tablet {
+  .page-form {
+
+    &__wrapper {
+      @include width-tablet;
+    }
+
+    &__title {}
+
+  }
+
+  .order {
+
+    &__text {
+      @include width-tablet;
+    }
+
+  }
+}
+
+@media desktop {
+  .page-form {
+
+    &__wrapper {
+      @include width-desktop;
+    }
+
+    &__title {}
+
+  }
+
+  .order {
+
+    &__text {
+      @include width-desktop;
+    }
+
+  }
 }

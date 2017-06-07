@@ -13,3 +13,37 @@
   }
 
 }
+
+@media tablet {
+  .about-us {
+
+    &__wrapper {
+      @include width-tablet;
+    }
+
+    &__title {}
+
+    &__item {
+      width: 300px;
+    }
+
+    &__img {}
+
+  }
+
+}
+
+@media desktop {
+  .about-us {
+
+    &__wrapper {
+      @include width-desktop;
+    }
+
+    &__title {}
+
+    &__img {}
+
+  }
+
+}

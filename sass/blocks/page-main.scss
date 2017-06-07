@@ -41,3 +41,29 @@
   }
 
 }
+
+@media tablet {
+
+  .headline {
+
+    &__item {
+      height: 118px;
+      width: 334px;
+    }
+
+  }
+
+}
+
+@media desktop {
+
+  .headline {
+
+    &__item {
+      height: 118px;
+      width: 525px;
+    }
+
+  }
+
+}
