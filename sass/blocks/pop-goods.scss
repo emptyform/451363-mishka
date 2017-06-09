@@ -1,154 +1,169 @@
-.pop-goods {
+.pop-goods {}
 
-  &__wrapper {
-    @include width-mobile;
-    display: flex;
-    flex-direction: column;
+.pop-goods__wrapper {
+  @include width-mobile;
+
+  @media ( $tablet ) {
+    @include width-tablet;
   }
 
-  &__title {
-    margin-top: 20px;
-    @include f25h30b;
+  @media ( $desktop ) {
+    @include width-desktop;
   }
 
-  &__subtitle {
-    margin-top: -17px;
-    text-transform: uppercase;
-    color: $bg-color-green-1;
-    @include f17h20b;
+}
+
+.pop-goods__title {
+  margin-top: 30px;
+  @include f25h30b;
+
+  @media ( $tablet ) {
+    margin-top: 60px;
+    @include f43h50b;
+    width: 501px;
   }
 
-  &__text {
-    @include f15h24;
-    color: $text-color-gray-dark;
+  @media ( $desktop ) {
+    margin-top: 145px;
+    @include f53h57b;
+    width: 528px;
+    margin-left: 175px;
   }
 
-  &__table {
-    margin-bottom: 20px;
-  }
+}
 
-  &__row {
-    height: 40px;
-    border-bottom: 1px solid $bg-color-gray-table;
-  }
+.pop-goods__subtitle {
+  margin-top: -17px;
+  text-transform: uppercase;
+  color: $bg-color-green-1;
+  @include f17h20b;
 
-  &__data-left {
-    width: 98px;
-  }
-
-  &__data-right {
-    width: 162px;
-  }
-
-  &__price {
-    @include f17h24b;
-    color: $text-color-gray-dark;
+  @media ( $tablet ) {
+    @include f17h17b;
+    width: 80px;
     text-align: center;
-    margin: 28px auto;
+    float: right;
+    margin-top: -75px;
   }
 
-  &__img {
+  @media ( $desktop ) {
+    float: left;
+    margin-top: -85px;
+    margin-left: 45px;
+  }
 
-    &-mobile {}
+}
 
-    &-tablet {
+.pop-goods__text {
+  @include f15h24;
+  color: $text-color-gray-dark;
+  margin: 30px auto;
+
+  @media ( $tablet ) {
+    @include f17h30;
+    width: 290px;
+    margin: 35px 0;
+  }
+
+  @media ( $desktop ) {
+    margin-left: 175px;
+    margin-top: 65px;
+  }
+
+}
+
+.pop-goods__table {
+  margin-bottom: 20px;
+  border-collapse: collapse;
+
+  @media ( $tablet ) {
+    width: 290px;
+  }
+
+  @media ( $desktop ) {
+    margin-left: 175px;
+  }
+
+}
+
+.pop-goods__row {
+  line-height: 1.3;
+}
+
+.pop-goods__data-left {
+  width: 98px;
+  color: $text-color-gray-dark;
+  border-bottom: 1px solid $bg-color-gray-table;
+  padding: 15px 0;
+  @include f15h20;
+}
+
+.pop-goods__data-right {
+  width: 162px;
+  color: $text-color-gray-dark;
+  border-bottom: 1px solid $bg-color-gray-table;
+  padding: 15px 0;
+  @include f15h20;
+}
+
+.pop-goods__img {
+
+  &-mobile {
+    display: none;
+
+    @media ( $mobile ) {
+      display: block;
+      padding-top: 20px;
+    }
+
+  }
+
+  &-tablet {
+    display: none;
+
+    @media ( $tablet ) {
+      display: block;
+      width: 334px;
+      float: right;
+      margin-top: -292px;
+    }
+
+    @media ( $desktop ) {
       display: none;
     }
 
-    &-desktop {
-      display: none;
+  }
+
+  &-desktop {
+    display: none;
+
+    @media ( $desktop ) {
+      display: block;
+      float: right;
+      margin-top: -480px;
     }
 
   }
 
 }
 
-@media tablet {
-  .pop-goods {
+.pop-goods__price {
+  @include f17h24b;
+  color: $text-color-gray-dark;
+  text-align: center;
+  margin: 28px auto;
 
-    &__wrapper {
-      @include width-tablet;
-    }
-
-    &__title {
-      margin-top: 55px;
-    }
-
-    &__subtitle {}
-
-    &__text {}
-
-    &__table {}
-
-    &__row {}
-
-    &__data-left {}
-
-    &__data-right {}
-
-    &__price {}
-
-    &__img {
-
-      &-mobile {
-        display: none;
-      }
-
-      &-tablet {
-        display: block;
-      }
-
-      &-desktop {
-        display: none;
-      }
-
-    }
-
+  @media ( $tablet ) {
+    @include f20h24b;
+    margin-top: 28px;
+    margin-bottom: 28px;
+    margin-left: -40px;
   }
 
-}
-
-@media desktop {
-  .pop-goods {
-
-    &__wrapper {
-      @include width-desktop;
-    }
-
-    &__title {
-      margin-top: 55px;
-    }
-
-    &__subtitle {}
-
-    &__text {}
-
-    &__table {}
-
-    &__row {}
-
-    &__data-left {}
-
-    &__data-right {}
-
-    &__price {}
-
-    &__img {
-
-      &-mobile {
-        display: none;
-      }
-
-      &-tablet {
-        display: none;
-      }
-
-      &-desktop {
-        display: block;
-      }
-
-    }
-
+  @media ( $desktop ) {
+    margin-top: 62px;
+    margin-bottom: 38px;
+    margin-left: 110px;
   }
 
 }

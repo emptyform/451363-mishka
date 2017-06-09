@@ -1,135 +1,140 @@
-.contacts {
+.contacts {}
 
-  &__wrapper {}
+.contacts__wrapper {
 
-  &__title {
-    @include width-mobile;
-    @include f18h30b;
+  @media ( $tablet ) {
+    background: url("/img/icon-flag.svg") no-repeat;
+    background-position-x: 670px;
   }
 
-  &__table {
-    @include width-mobile;
-    margin-bottom: 20px;
+  @media ( $desktop ) {
+    background: url("/img/icon-flag.svg") no-repeat;
+    background-position-x: 63px;
+    @include width-desktop;
   }
 
-  &__row {
-    height: 40px;
+}
+
+.contacts__title {
+  @include width-mobile;
+  @include f18h30b;
+
+  @media ( $tablet ) {
+    @include width-tablet;
+    @include f43h50b;
+    margin-top: 50px;
+    margin-bottom: 67px;
   }
 
-  &__data-left {
-    width: 78px;
-    @include f15h30;
+  @media ( $desktop ) {
+    @include width-desktop;
+    @include f53h57b;
+    margin-left: 175px;
+    margin-top: 160px;
+    margin-bottom: 67px;
   }
 
-  &__data-right {
-    @include f15h30;
+}
 
-      &--email {
-        width: 177px;
-      }
+.contacts__table {
+  @include width-mobile;
+  margin-bottom: 20px;
 
-      &--adress {
-        width: 140px;
-      }
-
+  @media ( $tablet ) {
+    @include width-tablet;
   }
 
-  &__map {
+  @media ( $desktop ) {
+    @include width-desktop;
+    margin-left: 175px;
+  }
 
-    &--mobile {}
+}
 
-    &--tablet {
-      display: none;
-    }
+.contacts__row {
+  height: 40px;
 
-    &--desktop {
-      display: none;
+  @media ( $tablet ) {
+    width: 334px;
+    display: table-cell;
+  }
+
+  @media ( $desktop) {
+    width: 350px;
+    display: table;
+    margin-bottom: 30px
+  }
+
+}
+
+.contacts__data-left {
+  width: 78px;
+  @include f15h30;
+  color: $text-color-gray-dark;
+  vertical-align: top;
+
+  @media ( $tablet ) {
+    @include f17h30;
+  }
+
+}
+
+.contacts__data-right {
+  @include f15h30;
+  color: $text-color-gray-dark;
+
+  @media ( $tablet ) {
+    @include f17h30;
+  }
+
+  &--email {
+    width: 177px;
+    border-bottom: 1px solid $bg-color-green-1;
+  }
+
+  &--adress {
+    width: 140px;
+
+    @media ( $tablet ) {
+      width: 200px;
     }
 
   }
 
 }
 
-@media tablet {
-  .contacts {
+.contacts__map {
 
-    &__wrapper {}
+  &--mobile {
+    display: none;
 
-    &__title {
-      @include width-tablet;
+    @media ( $mobile ) {
+      display: block;
+    }
+  }
+
+  &--tablet {
+    display: none;
+
+    @media ( $tablet ) {
+      display: block;
+      margin-top: 65px;
     }
 
-    &__table {}
-
-    &__row {}
-
-    &__data-left {}
-
-    &__data-right {
-
-        &--email {}
-
-        &--adress {}
-
-    }
-
-    &__map {
-
-      &--mobile {
-        display: none;
-      }
-
-      &--tablet {
-        display: block;
-      }
-
-      &--desktop {
-        display: none;
-      }
-
+    @media ( $desktop ) {
+      display: none;
     }
 
   }
 
-}
+  &--desktop {
+    display: none;
 
-@media desktop {
-  .contacts {
-
-    &__wrapper {}
-
-    &__title {
-      @include width-desktop;
-    }
-
-    &__table {}
-
-    &__row {}
-
-    &__data-left {}
-
-    &__data-right {
-
-        &--email {}
-
-        &--adress {}
-
-    }
-
-    &__map {
-
-      &--mobile {
-        display: none;
-      }
-
-      &--tablet {
-        display: none;
-      }
-
-      &--desktop {
-        display: block;
-      }
-
+    @media ( $desktop ) {
+      display: block;
+      float: right;
+      margin-top: -340px;
+      margin-right: 0px;
     }
 
   }

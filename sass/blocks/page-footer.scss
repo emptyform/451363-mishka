@@ -1,67 +1,116 @@
 .page-footer {
+  background-color: $bg-color-gray;
+}
 
-  &__wrapper {
-    background-color: $bg-color-gray;
+.page-footer__wrapper {
+
+  @media ( $tablet ) {
+    height: 142px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include width-tablet;
   }
 
-  &__logo {
-    display: none;
-  }
-
-  &__copyright {
-    @include f19h18b;
-  }
-
-  &__htmlacademy-logo {
-    fill: $bg-color-green-1;
+  @media ( $desktop ) {
+    height: 142px;
+    @include width-desktop;
   }
 
 }
+
+.page-footer__logo {
+  display: none;
+
+  @media ( $tablet ) {
+    // display: inline-block;
+    // float: left;
+    // margin-top: 20px;
+    display: flex;
+    width: 103px;
+  }
+
+}
+
+.page-footer__logo-mishka {}
 
 .social-links {
   align-items: center;
   height: 80px;
-  border-bottom: 1px solid $bg-color-gray-bottom;
+  display: flex;
+  justify-content: space-between;
+  width: 145px;
+  margin: auto;
 }
 
-@media tablet {
-  .page-footer {
+.social-links__item {
 
-    &__wrapper {
-      @include width-tablet;
-    }
+  &--ig {}
 
-    &__logo {
-      display: block;
-    }
+  &--fb {}
 
-    &__copyright {}
+  &--tw {}
 
-    &__htmlacademy-logo {}
+}
 
+.page-footer__copyright {
+  @include f19h18b;
+  width: 260px;
+  margin: 0 auto;
+  border-top: 1px solid $bg-color-gray-bottom;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  @media ( $tablet ) {
+    border: none;
+    width: 185px;
   }
 
-  .social-links {}
-
 }
 
-@media desktop {
-  .page-footer {
+.page-footer__copyright-link {}
 
-    &__wrapper {
-      @include width-desktop;
-    }
+.page-footer__copyright-logo {}
 
-    &__logo {
-      display: block;
-    }
 
-    &__copyright {}
-
-    &__htmlacademy-logo {}
-
-  }
-
-  .social-links {}
-
-}
+// /* OUTLINE *//* OUTLINE *//* OUTLINE *//* OUTLINE *//* OUTLINE */
+//
+// .page-footer__wrapper {
+//   outline: 2px solid red;
+//   outline-offset: 2px;
+// }
+//
+// .social-links {
+//   outline: 2px solid yellow;
+//   outline-offset: -2px;
+// }
+//
+// .page-footer__copyright {
+//   outline: 2px solid green;
+//   outline-offset: -2px;
+// }
+//
+// .page-footer__copyright-link {
+//   outline: 2px solid grey;
+//   outline-offset: -2px;
+// }
+//
+// .page-footer__copyright-logo {
+//   outline: 2px solid purple;
+//   outline-offset: -2px;
+// }
+//
+// .social-links__item--ig,
+// .social-links__item--fb,
+// .social-links__item--tw {
+//   outline: 2px solid blue;
+//   outline-offset: -2px;
+// }
+//
+// .page-footer__logo {
+//   outline: 2px solid orange;
+//   outline-offset: -2px;
+// }
+//
+// /* OUTLINE *//* OUTLINE *//* OUTLINE *//* OUTLINE *//* OUTLINE */

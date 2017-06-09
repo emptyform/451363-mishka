@@ -12,17 +12,33 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <div class="page-header__logo">
-          <img src="img/logo-mobile.svg" class="page-header__logo--mobile" width="86" height="35" alt="Mishka">
-          <img src="img/logo-mobile.svg" class="page-header__logo--tablet" width="113" height="46" alt="Mishka">
-          <img src="img/logo-mobile.svg" class="page-header__logo--desktop" width="149" height="72" alt="Mishka">
+          <img class="page-header__logo--mobile" src="img/logo-mobile.svg" width="86" height="35" alt="Mishka">
+          <img class="page-header__logo--tablet" src="img/logo-mobile.svg" width="113" height="46" alt="Mishka">
+          <img class="page-header__logo--desktop" src="img/logo-mobile.svg" width="149" height="72" alt="Mishka">
         </div>
-        <nav class="main-nav">
-          <button class="main-nav__button main-nav__button--open" type="button"><img src="img/icon-menu-open.svg" width="20" height="14" alt="Меню"></button>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <button class="main-nav__button" type="button">
+            <img src="img/icon-menu-open.svg" width="20" height="14" alt="Меню">
+          </button>
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="#">Каталог товаров</a></li>
-            <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
-            <li class="main-nav__item main-nav__item--search"><a href="#"><img src="img/icon-search.svg" width="18" height="18" alt="Поиск">Поиск по сайту</a></li>
-            <li class="main-nav__item main-nav__item--cart"><a href="#"><img src="img/icon-cart.svg" width="20" height="19" alt="Корзина">Корзина: пока пуста</a></li>
+            <li class="main-nav__item">
+              <a href="#">Каталог товаров</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">Вязание на заказ</a>
+            </li>
+            <li class="main-nav__item main-nav__item--search">
+              <a href="#">
+                <img src="img/icon-search.svg" width="18" height="18" alt="Поиск">
+                Поиск по сайту
+              </a>
+            </li>
+            <li class="main-nav__item main-nav__item--cart">
+              <a href="#">
+                <img src="img/icon-cart.svg" width="20" height="19" alt="Корзина">
+                Корзина: пока пуста
+              </a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -35,8 +51,18 @@
             <h1 class="headline__title">Милые штуки ручной работы для дома</h1>
           </div>
           <div class="headline__goods">
-            <div class="headline__item headline__item--bg-top"><a href="#">Предметы интерьера<img src="img/icon-interior.svg" class="headline__img" width="42" height="62" alt="Предметы интерьера"></a></div>
-            <div class="headline__item headline__item--bg-bottom"><a href="#">Детские игрушки<img src="img/icon-toy.svg" class="headline__img" width="61" height="61" alt="Детские игрушки"></a></div>
+            <div class="headline__item headline__item--bg-top">
+              <p class="headline__text">Предметы интерьера</p>
+              <div class="headline__img--box">
+                <img class="headline__img" src="img/icon-interior.svg" width="42" height="62" alt="Предметы интерьера">
+              </div>
+            </div>
+            <div class="headline__item headline__item--bg-bottom">
+              <p class="headline__text">Детские игрушки</p>
+              <div class="headline__img--box">
+                <img class="headline__img" src="img/icon-toy.svg" width="61" height="61" alt="Детские игрушки">
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -60,11 +86,11 @@
               <td class="pop-goods__data-right">15 см</td>
             </tr>
           </table>
-          <img src="/img/triple-set-mobile@1x.jpg" class="pop-goods__img-mobile" width="260" height="315" alt="Вязаные корзинки">
+          <img class="pop-goods__img-mobile" src="/img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
+          <img class="pop-goods__img-tablet" src="/img/triple-set-mobile@1x.jpg" width="333" height="404" alt="Вязаные корзинки">
+          <img class="pop-goods__img-desktop" src="/img/triple-set-mobile@1x.jpg" width="525" height="636" alt="Вязаные корзинки">
           <div class="pop-goods__price">Цена: 990 руб.</div>
-          <button class="btn" type="submit">Заказать</button>
-          <img src="/img/triple-set-mobile@1x.jpg" class="pop-goods__img-tablet" width="333" height="404" alt="Вязаные корзинки">
-          <img src="/img/triple-set-mobile@1x.jpg" class="pop-goods__img-desktop" width="525" height="636" alt="Вязаные корзинки">
+          <button class="btn btn--pop-goods" type="submit">Заказать</button>
         </div>
       </section>
       <!-- Коротко о нас -->
@@ -73,22 +99,40 @@
           <h2 class="about-us__title">Коротко о нас:</h2>
           <ul class="about-us__list">
             <li class="about-us__item">
-              <img src="img/icon-feature-1.svg" class="about-us__img" width="32" height="37" alt="Экологически чистые материалы">Экологически чистые материалы
+              <div class="about-us__img--box">
+                <img class="about-us__img" src="img/icon-feature-1.svg" width="32" height="37" alt="Экологически чистые материалы">
+              </div>
+              <p class="about-us__text">Экологически чистые материалы</p>
             </li>
             <li class="about-us__item">
-              <img src="img/icon-feature-3.svg" class="about-us__img" width="47" height="27" alt="Скандинавский стиль по российской цене">Скандинавский стиль по российской цене
+              <div class="about-us__img--box">
+                <img class="about-us__img" src="img/icon-feature-3.svg" width="47" height="27" alt="Скандинавский стиль по российской цене">
+              </div>
+              <p class="about-us__text">Скандинавский стиль по российской цене</p>
             </li>
             <li class="about-us__item">
-              <img src="img/icon-feature-5.svg" class="about-us__img" width="33" height="28" alt="Увеличивает лайки на фотографиях">Увеличивает лайки на фотографиях
+              <div class="about-us__img--box">
+                <img class="about-us__img" src="img/icon-feature-5.svg" width="33" height="28" alt="Увеличивает лайки на фотографиях">
+              </div>
+              <p class="about-us__text">Увеличивает лайки на фотографиях</p>
             </li>
             <li class="about-us__item">
-              <img src="img/icon-feature-2.svg" class="about-us__img" width="34" height="34" alt="Связано вручную с любовью и умилением">Связано вручную с любовью и умилением
+              <div class="about-us__img--box">
+                <img class="about-us__img" src="img/icon-feature-2.svg" width="34" height="34" alt="Связано вручную с любовью и умилением">
+              </div>
+              <p class="about-us__text">Связано вручную с любовью и умилением</p>
             </li>
             <li class="about-us__item">
-              <img src="img/icon-feature-4.svg" class="about-us__img" width="54" height="23" alt="Поддержка отечественного производителя">Поддержка отечественного производителя
+              <div class="about-us__img--box">
+                <img class="about-us__img" src="img/icon-feature-4.svg" width="54" height="23" alt="Поддержка отечественного производителя">
+              </div>
+              <p class="about-us__text">Поддержка отечественного производителя</p>
             </li>
             <li class="about-us__item">
-              <img src="img/icon-feature-6.svg" class="about-us__img" width="33" height="32" alt="Поставляется в подарочной упаковке">Поставляется в подарочной упаковке
+              <div class="about-us__img--box">
+                <img class="about-us__img" src="img/icon-feature-6.svg" width="33" height="32" alt="Поставляется в подарочной упаковке">
+              </div>
+              <p class="about-us__text">Поставляется в подарочной упаковке</p>
             </li>
           </ul>
         </div>
@@ -103,8 +147,12 @@
             <p class="reviews__author-contact">@misssssiskras</p>
           </article>
           <div class="reviews__toggle">
-            <button class="reviews__toggle-item reviews__toggle-item--prev" type="button"><img src="img/icon-right-arrow.svg"  width="50" height="26" alt="prev"></button>
-            <button class="reviews__toggle-item reviews__toggle-item--next" type="button"><img src="img/icon-right-arrow.svg"  width="50" height="26" alt="next"></button>
+            <button class="reviews__toggle-item reviews__toggle-item--prev" type="button">
+              <img class="reviews__toggle-img" src="img/icon-left-arrow.svg"  width="50" height="26" alt="prev">
+            </button>
+            <button class="reviews__toggle-item reviews__toggle-item--next" type="button">
+              <img class="reviews__toggle-img" src="img/icon-right-arrow.svg"  width="50" height="26" alt="next">
+            </button>
           </div>
           <button class="btn btn--reviews" type="submit">Написать</button>
         </div>
@@ -135,17 +183,24 @@
     <!-- footer -->
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <div class="page-footer__logo">
-          <img src="img/logo-mobile.svg" class="page-footer__logo" width="102" height="34" alt="Mishka">
-        </div>
+        <span class="page-footer__logo">
+          <img src="img/logo-mobile.svg" class="page-footer__logo-mishka" width="102" height="34" alt="Mishka">
+        </span>
         <div class="social-links">
-          <a class="social-links__item social-links__item--ig" title="Instagram" href="#"><img src="img/icon-insta.svg" width="22" height="21" alt="Instagram"></a>
-          <a class="social-links__item social-links__item--fb" title="Facebook" href="#"><img src="img/icon-fb.svg" width="15" height="28" alt="Facebook"></a>
-          <a class="social-links__item social-links__item--tw" title="Twitter" href="#"><img src="img/icon-twitter.svg" width="23" height="20" alt="Twitter"></a>
+          <a class="social-links__item social-links__item--ig" title="Instagram" href="#">
+            <img src="img/icon-insta.svg" width="22" height="21" alt="Instagram">
+          </a>
+          <a class="social-links__item social-links__item--fb" title="Facebook" href="#">
+            <img src="img/icon-fb.svg" width="15" height="28" alt="Facebook">
+          </a>
+          <a class="social-links__item social-links__item--tw" title="Twitter" href="#">
+            <img src="img/icon-twitter.svg" width="23" height="20" alt="Twitter">
+          </a>
         </div>
         <div class="page-footer__copyright">
-          <a class="page-footer__htmlacademy" href="https://htmlacademy.ru/intensive/adaptive">
-            <p class="page-footer__htmlacademy-text">Разработано<img src="img/logo-htmlacademy.svg" class="page-footer__htmlacademy-logo" width="27" height="34" alt="htmlacademy"></p>
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+            Разработано
+            <img src="img/logo-htmlacademy.svg" class="page-footer__copyright-logo" width="27" height="34" alt="htmlacademy">
           </a>
         </div>
       </div>
@@ -168,5 +223,22 @@
         </form>
       </div>
     </section>
+    <!-- script menu button -->
+    <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__button');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+  </script>
   </body>
 </html>

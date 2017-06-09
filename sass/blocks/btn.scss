@@ -13,12 +13,48 @@
     color: $bg-color-white;
   }
 
+  &--pop-goods {
+
+    @media ( $tablet ) {
+      width: 290px;
+    }
+
+    @media ( $desktop ) {
+      margin-left: 175px;
+    }
+
+  }
+
   &--reviews {
     margin: 40px auto;
+
+    @media ( $tablet ) {
+      float: right;
+      margin-top: -345px;
+      width: 175px;
+    }
+
+    @media ( $desktop ) {
+      margin-top: -313px;
+    }
+
   }
 
   &--contacts {
     margin: 40px 30px;
+
+    @media ( $tablet ) {
+      margin: 55px 269px;
+      width: 230px;
+    }
+
+    @media ( $desktop ) {
+      margin-top: 68px;
+      margin-right: 0;
+      margin-bottom: 170px;
+      margin-left: 175px;
+    }
+
   }
 
 }

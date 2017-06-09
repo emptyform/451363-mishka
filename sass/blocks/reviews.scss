@@ -1,112 +1,126 @@
 .reviews {
 
-  &__wrapper {
-    @include width-mobile;
-  }
-
-  &__title {
-    @include f25h30b;
-  }
-
-  &__text {
-    @include f15h30;
-    color: $text-color-gray-dark;
-  }
-
-  &__author-name {
-    @include f17h20b;
-  }
-
-  &__author-contact {
-    font-size: 17px;
-  }
-
-  &__toggle {
-    margin-top: 36px;
-
-    &-item {
-      height: 52px;
-      border: 2px solid $bg-color-gray-table;
-      background-color: $bg-color-white;
-
-      &--prev {
-        width: 127px;
-        height: 52px;
-        border-right: none;
-      }
-
-      &--next {
-        width: 127px;
-        height: 52px;
-      }
-
-    }
-
-  }
-
-}
-
-@media tablet {
-  .reviews {
+  @media ( $tablet ) {
     background: url(/img/review@1x.jpg) no-repeat;
+    background-position-y: 63px;
+  }
 
-    &__wrapper {
-      @include width-tablet;
+  @media ( $desktop ) {
+    background: url(/img/review@1x.jpg) no-repeat;
+    background-position-y: 63px;
+  }
+
+}
+
+.reviews__wrapper {
+  @include width-mobile;
+
+  @media ( $tablet ) {
+    @include width-tablet;
+    padding-top: 100px;
+    padding-bottom: 42px;
+  }
+
+  @media ( $desktop ) {
+    @include width-desktop;
+  }
+
+}
+
+.reviews__title {
+  @include f25h30b;
+
+  @media ( $tablet ) {
+    @include f43h50b;
+  }
+
+  @media ( $desktop ) {
+    @include f53h57b;
+    margin-left: 175px;
+  }
+
+}
+
+.reviews__text {
+  @include f15h30;
+  color: $text-color-gray-dark;
+  margin: 40px auto;
+
+  @media ( $tablet ) {
+    @include f17h30;
+    margin: 50px auto;
+  }
+
+  @media ( $desktop ) {
+    margin-left: 175px;
+  }
+
+}
+
+.reviews__author-name {
+  @include f17h20b;
+
+  @media ( $desktop ) {
+    margin-left: 175px;
+  }
+
+}
+
+.reviews__author-contact {
+  font-size: 17px;
+
+  @media ( $desktop ) {
+    margin-left: 175px;
+  }
+
+}
+
+.reviews__toggle {
+  margin-top: 36px;
+
+  @media ( $tablet ) {
+    float: right;
+    margin-top: -70px;
+    width: 167px;
+  }
+
+}
+
+.reviews__toggle-item {
+  width: 130px;
+  height: 52px;
+  border: 1px solid $bg-color-gray-table;
+  background-color: $bg-color-white;
+  border-collapse: collapse;
+
+  @media ( $tablet ) {
+    border: none;
+  }
+
+  &--prev {
+
+    @media ( $tablet ) {
+      width: 83px;
     }
 
-    &__title {}
+  }
 
-    &__text {}
+  &--next {
+    margin-left: -5px;
 
-    &__author-name {}
-
-    &__author-contact {}
-
-    &__toggle {
-      margin-top: 36px;
-
-      &-item {
-
-        &--prev {}
-
-        &--next {}
-
-      }
-
+    @media ( $tablet ) {
+      width: 83px;
     }
 
   }
 
 }
 
-@media desktop {
-  .reviews {
+.reviews__toggle-img {
+  margin: 10px;
 
-    &__wrapper {
-      @include width-desktop;
-    }
-
-    &__title {}
-
-    &__text {}
-
-    &__author-name {}
-
-    &__author-contact {}
-
-    &__toggle {
-      margin-top: 36px;
-
-      &-item {
-
-        &--prev {}
-
-        &--next {}
-
-      }
-
-    }
-
+  @media ( $tablet ) {
+    margin: 11px;
   }
 
 }

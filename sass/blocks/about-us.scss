@@ -1,49 +1,110 @@
-.about-us {
+.about-us {}
 
-  &__wrapper {
-    @include width-mobile;
+.about-us__wrapper {
+  @include width-mobile;
+  margin-bottom: 55px;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media ( $tablet ) {
+    @include width-tablet;
+    margin-top: 60px;
   }
 
-  &__title {
-    @include f25h30b;
-  }
-
-  &__img {
-    fill: $bg-color-green-1;
-  }
-
-}
-
-@media tablet {
-  .about-us {
-
-    &__wrapper {
-      @include width-tablet;
-    }
-
-    &__title {}
-
-    &__item {
-      width: 300px;
-    }
-
-    &__img {}
-
+  @media ( $desktop ) {
+    width: 700px;
+    margin-top: 100px;
   }
 
 }
 
-@media desktop {
-  .about-us {
+.about-us__title {
+  @include f25h30b;
 
-    &__wrapper {
-      @include width-desktop;
+  @media ( $tablet ) {
+    @include f43h50b;
+  }
+
+}
+
+.about-us__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-us__item {
+
+  @media ( $tablet ) {
+    width: 334px;
+
+    &:nth-child(1),
+    &:nth-child(4) {
+      order: 1;
     }
 
-    &__title {}
+    &:nth-child(2),
+    &:nth-child(5) {
+      order: 2;
+    }
 
-    &__img {}
+    &:nth-child(3),
+    &:nth-child(6) {
+      order: 3;
+    }
 
   }
 
 }
+
+.about-us__img {
+  display: block;
+  margin: 0 auto;
+}
+
+.about-us__img--box {
+  width: 55px;
+  height: 38px;
+}
+
+.about-us__text {
+  @include f17h20b;
+
+  @media ( $tablet ) {
+    @include f20h22b;
+    width: 295px;
+  }
+
+}
+
+
+// /* OUTLINE *//* OUTLINE *//* OUTLINE *//* OUTLINE *//* OUTLINE */
+//
+// .about-us__wrapper {
+//   outline: 2px solid red;
+//   outline-offset: 2px;
+// }
+//
+// .about-us__item {
+//   outline: 2px solid yellow;
+//   outline-offset: -2px;
+// }
+//
+// .about-us__title {
+//   outline: 2px solid green;
+//   outline-offset: -2px;
+// }
+//
+// .about-us__img,
+// .about-us__text {
+//   outline: 2px solid blue;
+//   outline-offset: -2px;
+// }
+//
+// .about-us__item:nth-child(4),
+// .about-us__item:nth-child(5),
+// .about-us__item:nth-child(6) {
+//   outline: 4px solid purple;
+//   outline-offset: -2px;
+// }
+//
+// /* OUTLINE *//* OUTLINE *//* OUTLINE *//* OUTLINE *//* OUTLINE */

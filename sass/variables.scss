@@ -9,6 +9,6 @@ $text-color-black: #000;
 $text-color-gray-light: #c7c7c7;
 $text-color-gray-dark: #444;
 
-$mobile: "(min-width: 320px)";
-$tablet: "(min-width: 768px)";
-$desktop: "(min-width: 1200px)";
+$mobile: "max-width: 767px";
+$tablet: "min-width: 768px";
+$desktop: "min-width: 1200px";
