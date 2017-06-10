@@ -1,78 +1,49 @@
 .order__fieldset {
   @include width-mobile;
-
-  &-name {
-    @include f17h16b;
-    color: $bg-color-green-1;
-  }
-
 }
+
+
+.order__fieldset-name {
+  @include f17h16b;
+  color: $bg-color-green-1;
+}
+
+.radio {}
+
+.radio__input {}
+
+.radio__label {
+  @include f17h18b;
+}
+
+.checkbox {}
+
+.checkbox__input {}
+
+.checkbox__label {}
 
 .input {
   border-bottom: 2px solid $text-color-black;
   margin-bottom: 18px;
+}
 
-  &__label {
-    @include f17h18b;
-    color: $text-color-black;
+.input__label {
+  @include f17h18b;
+  color: $text-color-black;
 
-    &--name{
-      color: $bg-color-green-1;
-    }
-
+  &--name{
+    color: $bg-color-green-1;
   }
 
-  &__text {
-    @include f17h16;
-    color: $text-color-gray-light;
-  }
+  &--icon-email {}
 
 }
 
-@media tablet {
-  .order__fieldset {
-    @include width-tablet;
-
-    &-name {}
-
-  }
-
-  .input {
-
-
-    &__label {
-
-
-      &--name{}
-
-    }
-
-    &__text {}
-
-  }
-
+.input__text {
+  @include f17h16;
+  color: $text-color-gray-light;
 }
 
-@media desktop {
-  .order__fieldset {
-    @include width-desktop;
+.input__textarea {}
 
-    &-name {}
-
-  }
-
-  .input {
-
-
-    &__label {
-
-
-      &--name{}
-
-    }
-
-    &__text {}
-
-  }
-
-}
+.input__notification {}
