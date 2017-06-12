@@ -61,11 +61,7 @@
     width: 22px;
     height: 20px;
     border: none;
-
-    @media ( $tablet ) {
-      opacity: 0.2;
-    }
-
+    opacity: 0.2;
   }
 
   &--video {
@@ -81,7 +77,7 @@
       margin-bottom: 45px;
     }
 
-    @media ( $tablet ) {
+    @media ( $desktop ) {
       width: 228px;
       margin-left: 80px;
       margin-top: 45px;

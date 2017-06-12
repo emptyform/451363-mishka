@@ -23,6 +23,13 @@
   margin: 0 auto;
 }
 
+@mixin font ($size: false, $lh: false, $weight: false, $color: false) {
+    @if $size { font-size: $size; }
+    @if $lh { line-height: $lh; }
+    @if $weight { font-weight: $weight; }
+    @if $color { color: $colour; }
+}
+
 @mixin f13h24 {
   font-size: 13px;
   line-height: 24px;

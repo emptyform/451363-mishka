@@ -19,15 +19,12 @@
 
 }
 
-.page-footer__logo {
+.page-footer__logo-img {
   display: none;
+  width: 185px;
 
   @media ( $tablet ) {
-    // display: inline-block;
-    // float: left;
-    // margin-top: 20px;
     display: flex;
-    width: 103px;
   }
 
 }
@@ -57,9 +54,12 @@
   @include f19h18b;
   width: 260px;
   border-top: 1px solid $bg-color-gray-bottom;
-  // display: flex;
-  // justify-content: space-around;
-  // align-items: center;
+
+  @media ( $mobile ) {
+    @include width-mobile;
+    padding-top: 22px;
+    padding-bottom: 26px;
+  }
 
   @media ( $tablet ) {
     border: none;
@@ -75,45 +75,3 @@
 }
 
 .page-footer__copyright-logo {}
-
-
-// /* OUTLINE *//* OUTLINE *//* OUTLINE *//* OUTLINE *//* OUTLINE */
-//
-// .page-footer__wrapper {
-//   outline: 2px solid red;
-//   outline-offset: 2px;
-// }
-//
-// .social-links {
-//   outline: 2px solid yellow;
-//   outline-offset: -2px;
-// }
-//
-// .page-footer__copyright {
-//   outline: 2px solid green;
-//   outline-offset: -2px;
-// }
-//
-// .page-footer__copyright-link {
-//   outline: 2px solid grey;
-//   outline-offset: -2px;
-// }
-//
-// .page-footer__copyright-logo {
-//   outline: 2px solid purple;
-//   outline-offset: -2px;
-// }
-//
-// .social-links__item--ig,
-// .social-links__item--fb,
-// .social-links__item--tw {
-//   outline: 2px solid blue;
-//   outline-offset: -2px;
-// }
-//
-// .page-footer__logo {
-//   outline: 2px solid orange;
-//   outline-offset: -2px;
-// }
-//
-// /* OUTLINE *//* OUTLINE *//* OUTLINE *//* OUTLINE *//* OUTLINE */
