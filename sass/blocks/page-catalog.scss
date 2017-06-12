@@ -50,6 +50,11 @@
 
 .catalog__item {
   margin-top: 30px;
+
+  @media ( $tablet ) {
+    display: flex;
+  }
+
 }
 
 .catalog__img {
@@ -90,6 +95,12 @@
   border: 1px solid $bg-color-gray-light;
   margin-top: -3px;
 
+  @media ( $tablet ) {
+    width: 332px;
+    height: 332px;
+    margin-top: 0px;
+  }
+
   @media ( $desktop ) {
     width: 315px;
   }
@@ -98,6 +109,11 @@
 
 .catalog__item-cart {
   @include width-mobile;
+
+  @media ( $tablet ) {
+    width: 270px;
+  }
+
 }
 
 .catalog__item-name {
@@ -106,6 +122,7 @@
 
   @media ( $tablet ) {
     @include f20h24b;
+    margin-left: 0px;
   }
 
 }
@@ -122,6 +139,7 @@
   @media ( $tablet ) {
     width: 270px;
     @include f15h30;
+    margin-left: 0px;
   }
 
   @media ( $desktop ) {
@@ -130,7 +148,16 @@
 
 }
 
-.catalog__item-cost {}
+.catalog__item-cost {
+
+  @media ( $tablet ) {
+    width: 270px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+}
 
 .catalog__item-price {
   @include f15h24b;
@@ -138,6 +165,7 @@
 
   @media ( $tablet ) {
     @include f17h24b;
+    margin-left: 35px;
   }
 
 }
