@@ -1,30 +1,39 @@
-.headline {}
+.headline {
+  background: #f9f9f9;
+}
 
 .headline__wrapper {
   background: url('/img/hero-mobile@1x.jpg') no-repeat;
   height: 283px;
-  background-position-x: -126px;
+  background-position-x: 50%;
   background-position-y: -16px;
+
+  @media ( $tablet ) {
+    width: 768px;
+  }
 
   @media ( $desktop ) {
     height: 627px;
+    width: inherit;
+    background-size: 768px 746px;
   }
+
 }
 
 .headline__title {
   text-align: center;
   padding-top: 74px;
-  @include f27h30b;
+  @include font (27px, 30px, bold);
   @include width-mobile;
 
   @media ( $tablet ) {
     width: 500px;
-    @include f43h50b;
+    @include font (43px, 50px, bold);
   }
 
   @media ( $desktop ) {
     width: 620px;
-    @include f53h57b;
+    @include font (53px, 57px, bold);
   }
 
 }
@@ -73,11 +82,10 @@
 
 .headline__text {
   width: 110px;
-  color: $bg-color-white;
-  @include f19h24b;
+  @include font (19px, 24px, bold, $bg-color-white);
 
   @media ( $tablet ) {
-    @include f20h30b;
+    @include font (20px, 30px, bold);
   }
 
   @media ( $desktop ) {

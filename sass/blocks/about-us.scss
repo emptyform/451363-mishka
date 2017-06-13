@@ -19,10 +19,10 @@
 }
 
 .about-us__title {
-  @include f25h30b;
+  @include font (25px, 30px, bold);
 
   @media ( $tablet ) {
-    @include f43h50b;
+    @include font (43px, 50px, bold);
   }
 
 }
@@ -35,7 +35,7 @@
 .about-us__item {
 
   @media ( $tablet ) {
-    width: 334px;
+    width: 50%;
 
     &:nth-child(1),
     &:nth-child(4) {
@@ -67,44 +67,11 @@
 }
 
 .about-us__text {
-  @include f17h20b;
+  @include font (17px, 20px, bold);
 
   @media ( $tablet ) {
-    @include f20h22b;
+    @include font (20px, 22px, bold);
     width: 295px;
   }
 
 }
-
-
-// /* OUTLINE *//* OUTLINE *//* OUTLINE *//* OUTLINE *//* OUTLINE */
-//
-// .about-us__wrapper {
-//   outline: 2px solid red;
-//   outline-offset: 2px;
-// }
-//
-// .about-us__item {
-//   outline: 2px solid yellow;
-//   outline-offset: -2px;
-// }
-//
-// .about-us__title {
-//   outline: 2px solid green;
-//   outline-offset: -2px;
-// }
-//
-// .about-us__img,
-// .about-us__text {
-//   outline: 2px solid blue;
-//   outline-offset: -2px;
-// }
-//
-// .about-us__item:nth-child(4),
-// .about-us__item:nth-child(5),
-// .about-us__item:nth-child(6) {
-//   outline: 4px solid purple;
-//   outline-offset: -2px;
-// }
-//
-// /* OUTLINE *//* OUTLINE *//* OUTLINE *//* OUTLINE *//* OUTLINE */

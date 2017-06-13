@@ -1,34 +1,54 @@
 .contacts {}
 
 .contacts__wrapper {
+  position: relative;
+  // margin: 0 auto;
+  width: 300px;
 
   @media ( $tablet ) {
     background: url("/img/icon-flag.svg") no-repeat;
+    // перенести в заголовок, позиционировать через flex или absolut
     background-position-x: 670px;
+
+    // display: flex;
+    width: 700px;
   }
 
   @media ( $desktop ) {
-    background: url("/img/icon-flag.svg") no-repeat;
     background-position-x: 63px;
     @include width-desktop;
+    width: 1000px;
+  }
+
+}
+
+.contacts__content {
+  box-sizing: border-box;
+
+  @media ( $tablet ) {
+    width: 50%;
+  }
+
+  @media ( $desktop ) {
+    padding: 50px 20px 50px 200px;
   }
 
 }
 
 .contacts__title {
   @include width-mobile;
-  @include f18h30b;
+  @include font (18px, 30px, bold);
 
   @media ( $tablet ) {
     @include width-tablet;
-    @include f43h50b;
+    @include font (43px, 50px, bold);
     margin-top: 50px;
     margin-bottom: 67px;
   }
 
   @media ( $desktop ) {
     @include width-desktop;
-    @include f53h57b;
+    @include font (53px, 57px, bold);
     margin-left: 175px;
     margin-top: 160px;
     margin-bottom: 67px;
@@ -57,6 +77,7 @@
   @media ( $tablet ) {
     width: 334px;
     display: table-cell;
+    vertical-align: top;
   }
 
   @media ( $desktop) {
@@ -69,22 +90,19 @@
 
 .contacts__data-left {
   width: 78px;
-  @include f15h30;
-  color: $text-color-gray-dark;
-  vertical-align: top;
+  @include font (15px, 30px, normal, $text-color-gray-dark);
 
   @media ( $tablet ) {
-    @include f17h30;
+    @include font (17px, 30px);
   }
 
 }
 
 .contacts__data-right {
-  @include f15h30;
-  color: $text-color-gray-dark;
+  @include font (15px, 30px, normal, $text-color-gray-dark);
 
   @media ( $tablet ) {
-    @include f17h30;
+    @include font (17px, 30px);
   }
 
   &--email {
@@ -104,6 +122,7 @@
 }
 
 .contacts__map {
+  // max-width: 100%;
 
   &--mobile {
     display: none;
@@ -111,6 +130,7 @@
     @media ( $mobile ) {
       display: block;
     }
+
   }
 
   &--tablet {
@@ -119,6 +139,7 @@
     @media ( $tablet ) {
       display: block;
       margin-top: 65px;
+      // width: 50%;
     }
 
     @media ( $desktop ) {

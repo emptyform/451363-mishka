@@ -6,6 +6,7 @@
   text-transform: uppercase;
   @include f17h20b;
   cursor: pointer;
+  outline: 0;
 
   &--modal {
     background-color: $bg-color-green-1;
@@ -62,6 +63,7 @@
     height: 20px;
     border: none;
     opacity: 0.2;
+    padding: 0;
   }
 
   &--video {
