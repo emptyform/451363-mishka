@@ -1,67 +1,90 @@
 .modal {
   display: none;
   // display: block;
-  width: 100%;
-  margin: auto;
 }
 
 
 .modal__wrapper {
+  width: 100%;
+  margin: auto;
   border-top: 1px solid $text-color-gray-light;
 
   @media ( $tablet ) {
     width: 568px;
-    padding-top: 35px;
-    padding-bottom: 46px;
+    padding-top: 10px;
+    padding-bottom: 20px;
     border: 1px solid $text-color-gray-light;
     box-shadow: 0px 5px 10px 0px rgba(0, 1, 1, 0.25);
+    height: 336px;
+
   }
 
 }
 
 .modal__form {
   @include width-mobile;
-  // box-sizing: border-box;
-  padding-top: 28px;
-  padding-bottom: 46px;
+  margin-top: 28px;
+  margin-bottom: 46px;
+
+  @media ( $tablet ) {
+    width: 360px;
+  }
+
 }
 
 .modal__title {
   @include font (25px, 30px, bold);
   text-transform: uppercase;
   text-align: center;
-}
 
-.modal__fieldset {
-  width: 100%;
-  margin: auto;
+  @media ( $tablet ) {
+    @include font (30px, 57px, bold);
+  }
+
 }
 
 .modal__name {
   @include font (15px, 30px);
   text-align: center;
+
+  @media ( $tablet ) {
+    @include font (17px, 30px);
+  }
+
 }
 
-// .radio-input {
-//   display: none;
-// }
-//
-// .radio-label {
-//   width: 80px;
-//   height: 50px;
-//   border: 2px solid $bg-color-green-1;
-// }
+.modal__fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 260px;
+
+  @media ( $tablet ) {
+    width: 350px;
+    margin: 0 auto;
+  }
+
+}
 
 .radio-input {
   display: none;
 }
 
 .radio-label {
-  // box-sizing: border-box;
   border: 2px solid $bg-color-green-1;
   width: 80px;
-  height: 50px;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  height: 48px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  @include font (17px, 16px, bold);
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media ( $tablet ) {
+    width: 109px;
+    height: 48px;
+  }
+
 }

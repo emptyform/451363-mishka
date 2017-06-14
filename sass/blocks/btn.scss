@@ -12,6 +12,11 @@
     background-color: $bg-color-green-1;
     border: 2px solid $bg-color-green-1;
     color: $bg-color-white;
+
+    @media ( $tablet ) {
+      width: 350px;
+    }
+
   }
 
   &--pop-goods {
