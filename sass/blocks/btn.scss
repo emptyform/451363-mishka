@@ -4,7 +4,7 @@
   border: 2px solid $text-color-gray-dark;
   background-color: $bg-color-white;
   text-transform: uppercase;
-  @include f17h20b;
+  @include font (17px, 20px, bold);
   cursor: pointer;
   outline: 0;
 

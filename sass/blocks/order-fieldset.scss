@@ -1,11 +1,12 @@
 .order__fieldset {
   @include width-mobile;
+  padding-bottom: 50px;
 }
 
 
 .order__fieldset-name {
-  @include f17h16b;
-  color: $bg-color-green-1;
+  @include font (17px, 16px, bold, $bg-color-green-1);
+  text-transform: uppercase;
 }
 
 .radio {}
@@ -13,37 +14,75 @@
 .radio__input {}
 
 .radio__label {
-  @include f17h18b;
+  @include font (17px, 18px, bold);
 }
 
 .checkbox {}
 
 .checkbox__input {}
 
-.checkbox__label {}
+.checkbox__label {
+  @include font (17px, 18px, bold);
+}
 
 .input {
-  border-bottom: 2px solid $text-color-black;
   margin-bottom: 18px;
 }
 
 .input__label {
-  @include f17h18b;
-  color: $text-color-black;
+  @include font (17px, 18px, bold, $text-color-black);
 
   &--name{
-    color: $bg-color-green-1;
+    @include font (17px, 16px, bold, $bg-color-green-1);
+    text-transform: uppercase;
   }
 
-  &--icon-email {}
+  &--icon-phone {
+    position: absolute;
+    cursor: pointer;
+    width: 25px;
+    height: 24px;
+    transform: translate(228px, -65px);
+  }
+
+  &--icon-email {
+    position: absolute;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    transform: translate(225px, -65px);
+  }
 
 }
 
 .input__text {
-  @include f17h16;
-  color: $text-color-gray-light;
+  @include font (17px, 18px, normal, #cccccc);
+  // opacity: 0.3;
+  // color: rgba(68, 68, 68, 0.3);
+
+  display: block;
+  width: 260px;
+  padding-top: 16px;
+  padding-bottom: 14px;
+  border: none;
+  border-bottom: 2px solid $text-color-black;
+  margin-bottom: 24px;
+  outline: 0;
 }
 
-.input__textarea {}
+.input__textarea {
+  @include font (17px, 18px, normal, $text-color-gray-dark);
+  // opacity: 0.3;
 
-.input__notification {}
+  width: 241px;
+  min-height: 138px;
+  margin-top: 23px;
+  padding-top: 15px;
+  padding-left: 15px;
+  border: 2px solid $text-color-black;
+  margin-bottom: 14px;
+}
+
+.input__note {
+  @include font (14px, 16px, normal, $text-color-gray-dark);
+}

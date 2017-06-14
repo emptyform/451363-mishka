@@ -11,7 +11,7 @@
 }
 
 .page-form__title-text {
-  @include f27h30b;
+  @include font (27px, 30px, bold);
   text-align: center;
   margin: 74px auto;
 }
@@ -19,8 +19,7 @@
 .order {}
 
 .order__text {
-  @include f13h24;
-  color: $text-color-gray-dark;
+  @include font (13px, 24px, normal, $text-color-gray-dark);
   @include width-mobile;
   margin-top: 23px;
   margin-bottom: 23px;
