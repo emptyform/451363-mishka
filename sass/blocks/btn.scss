@@ -1,5 +1,5 @@
 .btn {
-  width: 259px;
+  width: 260px;
   height: 52px;
   border: 2px solid $text-color-gray-dark;
   background-color: $bg-color-white;
@@ -41,23 +41,40 @@
 
   }
 
+  // &--contacts {
+  //   margin: 40px 30px;
+  //
+  //   @media ( $tablet ) {
+  //     margin: 55px 269px;
+  //     width: 230px;
+  //   }
+  //
+  //   @media ( $desktop ) {
+  //     margin-top: 68px;
+  //     margin-right: 0;
+  //     margin-bottom: 170px;
+  //     margin-left: 175px;
+  //   }
+  //
+  // }
+
   &--contacts {
-    margin: 40px 30px;
+      text-align: center;
 
-    @media ( $tablet ) {
-      margin: 55px 269px;
-      width: 230px;
+      @media ( $tablet ) {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 50%;
+        text-align: left;
+      }
+
+      @media ( $desktop ) {
+        left: 200px;
+      }
+
     }
-
-    @media ( $desktop ) {
-      margin-top: 68px;
-      margin-right: 0;
-      margin-bottom: 170px;
-      margin-left: 175px;
-    }
-
-  }
-
+//
   &--cart {
     width: 22px;
     height: 20px;

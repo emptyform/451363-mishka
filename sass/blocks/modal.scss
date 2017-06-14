@@ -1,29 +1,67 @@
 .modal {
   display: none;
+  // display: block;
+  width: 100%;
+  margin: auto;
+}
 
-  &__wrapper {
-    @include width-mobile;
-  }
 
-  &__title {
-    @include f25h30b;
-    text-transform: uppercase;
-    text-align: center;
-  }
+.modal__wrapper {
+  border-top: 1px solid $text-color-gray-light;
 
-  &__name {
-    @include f15h30;
-    text-align: center;
+  @media ( $tablet ) {
+    width: 568px;
+    padding-top: 35px;
+    padding-bottom: 46px;
+    border: 1px solid $text-color-gray-light;
+    box-shadow: 0px 5px 10px 0px rgba(0, 1, 1, 0.25);
   }
 
 }
+
+.modal__form {
+  @include width-mobile;
+  // box-sizing: border-box;
+  padding-top: 28px;
+  padding-bottom: 46px;
+}
+
+.modal__title {
+  @include font (25px, 30px, bold);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.modal__fieldset {
+  width: 100%;
+  margin: auto;
+}
+
+.modal__name {
+  @include font (15px, 30px);
+  text-align: center;
+}
+
+// .radio-input {
+//   display: none;
+// }
+//
+// .radio-label {
+//   width: 80px;
+//   height: 50px;
+//   border: 2px solid $bg-color-green-1;
+// }
 
 .radio-input {
   display: none;
 }
 
 .radio-label {
+  // box-sizing: border-box;
+  border: 2px solid $bg-color-green-1;
   width: 80px;
   height: 50px;
-  border: 2px solid $bg-color-green-1;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  text-align: center;
 }

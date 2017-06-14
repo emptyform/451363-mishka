@@ -2,7 +2,7 @@
 
 .contacts__wrapper {
   position: relative;
-  // margin: 0 auto;
+  margin: 0 auto;
   width: 300px;
 
   @media ( $tablet ) {
@@ -10,13 +10,14 @@
     // перенести в заголовок, позиционировать через flex или absolut
     background-position-x: 670px;
 
-    // display: flex;
+    display: flex;
     width: 700px;
   }
 
   @media ( $desktop ) {
     background-position-x: 63px;
     @include width-desktop;
+
     width: 1000px;
   }
 
@@ -121,43 +122,52 @@
 
 }
 
-.contacts__map {
-  // max-width: 100%;
+iframe {
+  max-width: 100%;
 
-  &--mobile {
-    display: none;
-
-    @media ( $mobile ) {
-      display: block;
-    }
-
-  }
-
-  &--tablet {
-    display: none;
-
-    @media ( $tablet ) {
-      display: block;
-      margin-top: 65px;
-      // width: 50%;
-    }
-
-    @media ( $desktop ) {
-      display: none;
-    }
-
-  }
-
-  &--desktop {
-    display: none;
-
-    @media ( $desktop ) {
-      display: block;
-      float: right;
-      margin-top: -340px;
-      margin-right: 0px;
-    }
-
+  @media ( $tablet ) {
+    width: 50%;
   }
 
 }
+
+// .contacts__map {
+//   // max-width: 100%;
+//
+//   &--mobile {
+//     display: none;
+//
+//     @media ( $mobile ) {
+//       display: block;
+//     }
+//
+//   }
+//
+//   &--tablet {
+//     display: none;
+//
+//     @media ( $tablet ) {
+//       display: block;
+//       margin-top: 65px;
+//       // width: 50%;
+//     }
+//
+//     @media ( $desktop ) {
+//       display: none;
+//     }
+//
+//   }
+//
+//   &--desktop {
+//     display: none;
+//
+//     @media ( $desktop ) {
+//       display: block;
+//       float: right;
+//       margin-top: -340px;
+//       margin-right: 0px;
+//     }
+//
+//   }
+//
+// }

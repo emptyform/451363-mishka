@@ -176,9 +176,10 @@
             </table>
           </div>
           <div class="contacts__map">
-            <img src="/img/map-mobile@1x.jpg" class="contacts__map--mobile" width="320" height="457" alt="Карта">
+            <!-- <img src="/img/map-mobile@1x.jpg" class="contacts__map--mobile" width="320" height="457" alt="Карта">
             <img src="/img/map-mobile@1x.jpg" class="contacts__map--tablet" width="768" height="457" alt="Карта">
-            <img src="/img/map-mobile@1x.jpg" class="contacts__map--desktop" width="525" height="457" alt="Карта">
+            <img src="/img/map-mobile@1x.jpg" class="contacts__map--desktop" width="525" height="457" alt="Карта"> -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651568!2d30.32089461619646!3d59.938794181876276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1497445874458" width="320" height="457" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
           <button class="btn btn--contacts" type="submit">Напишите нам</button>
         </div>
@@ -214,9 +215,9 @@
     <!-- modal -->
     <section class="modal">
       <div class="modal__wrapper">
-        <h2 class="modal__title">Добавить в корзину</h2>
         <form class="modal__form" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset class="modal__fieldset">
+          <h2 class="modal__title">Добавить в корзину</h2>
+          <div class="modal__fieldset">
             <legend class="modal__name">Выберите размер:</legend>
             <label for="small" class="radio-label">S</label>
             <input type="radio" class="radio-input" id="small" name="size" value="S">
@@ -225,7 +226,7 @@
             <label for="large" class="radio-label">L</label>
             <input type="radio" class="radio-input" id="large" name="size" value="L">
             <button class="btn btn--modal" type="submit">Добавить</button>
-          </fieldset>
+          </div>
         </form>
       </div>
     </section>
