@@ -1,13 +1,13 @@
 .reviews {
 
   @media ( $tablet ) {
-    background: url(/img/review@1x.jpg) no-repeat;
+    background: url("/img/review@1x.jpg") no-repeat;
     background-position-y: 63px;
+    background-size: 350px 457px;
   }
 
   @media ( $desktop ) {
-    background: url(/img/review@1x.jpg) no-repeat;
-    background-position-y: 63px;
+    background-position-x: 25px;
   }
 
 }
@@ -27,50 +27,66 @@
 
 }
 
-.reviews__title {
-  @include f25h30b;
+.reviews__quote {
+  width: 260px;
+  margin: 0 auto;
 
   @media ( $tablet ) {
-    @include f43h50b;
+    width: 668px;
   }
 
   @media ( $desktop ) {
-    @include f53h57b;
+    width: 875px;
+  }
+
+}
+
+.reviews__title {
+  @include font (25px, 30px, bold);
+
+  @media ( $tablet ) {
+    @include font (43px, 50px, bold);
+  }
+
+  @media ( $desktop ) {
+    @include font (53px, 57px, bold);
     margin-left: 175px;
   }
 
 }
 
 .reviews__text {
-  @include f15h30;
-  color: $text-color-gray-dark;
+  @include font (15px, 30px, normal, $text-color-gray-dark);
   margin: 40px auto;
 
   @media ( $tablet ) {
-    @include f17h30;
+    @include font (17px, 30px);
     margin: 50px auto;
   }
 
   @media ( $desktop ) {
-    margin-left: 175px;
+    margin-left: 100px;
   }
 
 }
 
 .reviews__author-name {
-  @include f17h20b;
+  @include font (17px, 20px, bold);
+  font-style: normal;
+  margin-bottom: 20px;
 
   @media ( $desktop ) {
-    margin-left: 175px;
+    margin-left: 100px;
   }
 
 }
 
 .reviews__author-contact {
   font-size: 17px;
+  font-style: normal;
 
   @media ( $desktop ) {
-    margin-left: 175px;
+    margin-left: 100px;
   }
 
 }
@@ -118,6 +134,8 @@
 
 .reviews__toggle-img {
   margin: 10px;
+  width: 50px;
+  height: 26px;
 
   @media ( $tablet ) {
     margin: 11px;

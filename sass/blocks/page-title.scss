@@ -1,0 +1,40 @@
+.page-title {
+  background-color: $bg-color-gray;
+}
+
+.page-title__text {
+  @include font (27px, 30px, bold);
+  text-align: center;
+
+  @media ( $tablet ) {
+    @include font (43px, 50px, bold);
+  }
+
+  @media ( $desktop ) {
+    @include font (53px, 57px, bold);
+  }
+
+  &--headline {
+    margin: 74px auto;
+
+    @media ( $tablet ) {
+      margin: 80px auto;
+    }
+
+  }
+
+  &--headline-index {
+    padding-top: 74px;
+    @include width-mobile;
+
+    @media ( $tablet ) {
+      width: 500px;
+    }
+
+    @media ( $desktop ) {
+      width: 620px;
+    }
+
+  }
+
+}

@@ -43,7 +43,8 @@
 
   @media ( $tablet ) {
     @include font (20px, 24px, bold);
-    width: 250px;
+    width: 350px;
+    margin-top: 35px;
   }
 
   @media ( $desktop ) {
@@ -57,6 +58,8 @@
 .video__icon {
   margin-left: 34px;
   margin-right: 25px;
+  width: 32px;
+  height: 32px;
 
   @media ( $tablet ) {
     margin-left: 40px;
@@ -91,6 +94,8 @@
 .video__img {
 
   &-mobile {
+    width: 260px;
+    height: 150px;
 
     @media ( $tablet ) {
       display: none;
@@ -103,6 +108,8 @@
 
     @media ( $tablet ) {
       display: block;
+      width: 668px;
+      height: 455px;
     }
 
   }

@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Егор Распивин](https://up.htmlacademy.ru/adaptive/11/user/451363).
-* Наставник: [Анастасия Кулагина](https://htmlacademy.ru/profile/id125164).
+* Наставник: [Максим Сёмушкин](https://htmlacademy.ru/profile/id48647).
 
 ---
 

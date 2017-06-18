@@ -29,7 +29,10 @@
 
 }
 
-.page-footer__logo-mishka {}
+.page-footer__logo-mishka {
+  width: 102px;
+  height: 34px;
+}
 
 .social-links {
   align-items: center;
@@ -42,16 +45,25 @@
 
 .social-links__item {
 
-  &--ig {}
+  &--ig {
+    width: 22px;
+    height: 21px;
+  }
 
-  &--fb {}
+  &--fb {
+    width: 15px;
+    height: 28px;
+  }
 
-  &--tw {}
+  &--tw {
+    width: 23px;
+    height: 20px;
+  }
 
 }
 
 .page-footer__copyright {
-  @include f19h18b;
+  @include font (19px, 23px, bold);
   width: 260px;
   border-top: 1px solid $bg-color-gray-bottom;
 
@@ -76,4 +88,7 @@
   margin: auto;
 }
 
-.page-footer__copyright-logo {}
+.page-footer__copyright-logo {
+  width: 27px;
+  height: 34px;
+}

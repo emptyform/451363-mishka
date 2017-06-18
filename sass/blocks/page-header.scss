@@ -1,17 +1,16 @@
-.page-header {}
-
 .page-header__wrapper {
-  height: 80px;
+  position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
 
   @media ( $tablet ) {
-    height: 88px;
     @include width-tablet;
+    flex-direction: row;
+    height: 88px;
   }
 
   @media ( $desktop ) {
-    height: 130px;
     @include width-desktop;
   }
 
@@ -24,7 +23,10 @@
 
     @media ( $mobile ) {
       display: block;
-      margin-left: 116px;
+      margin-top: 22px;
+      margin-bottom: 20px;
+      width: 86px;
+      height: 35px;
     }
 
   }
@@ -34,6 +36,12 @@
 
     @media ( $tablet ) {
       display: block;
+      width: 113px;
+      height: 46px;
+    }
+
+    @media ( $desktop ) {
+      display: none;
     }
 
   }
@@ -41,33 +49,15 @@
   &--desktop {
     display: none;
 
-    @media ( $desktop ) {}
+    @media ( $desktop ) {
+      display: block;
+      position: absolute;
+      top: 9px;
+      left: 475px;
+      width: 149px;
+      height: 72px;
+    }
+
   }
 
 }
-
-.main-nav {}
-
-.main-nav__button {
-  margin-top: 7px;
-  margin-left: 50px;
-}
-
-.main-nav__list {
-  display: none;
-}
-
-// /* OUTLINE *//* OUTLINE *//* OUTLINE *//* OUTLINE *//* OUTLINE */
-//
-// .page-header__wrapper {
-//   outline: 2px solid red;
-//   outline-offset: 2px;
-// }
-//
-// .page-header__logo,
-// .main-nav__button {
-//   outline: 2px solid yellow;
-//   outline-offset: -2px;
-// }
-//
-// /* OUTLINE *//* OUTLINE *//* OUTLINE *//* OUTLINE *//* OUTLINE */
