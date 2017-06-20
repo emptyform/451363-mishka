@@ -1,0 +1,137 @@
+.about {
+  @include container;
+  margin-bottom: 50px;
+
+  @media ( $tablet ) {
+    margin-bottom: 60px;
+  }
+
+  @media ( $desktop ) {
+    margin-bottom: 65px;
+    padding: 0 225/1150*100%;
+  }
+
+}
+
+.about__title {
+  @include font (25px, 30px, bold);
+  margin: 0;
+
+  @media ( $tablet ) {
+    @include font (43px, 50px, bold);
+    margin-bottom: 20px;
+  }
+
+  @media ( $desktop ) {
+    @include font (53px, 57px, bold);
+  }
+
+}
+
+.about__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+
+  @media ( $tablet ) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+}
+
+.about__item {
+  @include font (17px, 20px, bold);
+  padding-top: 52px;
+  position: relative;
+  margin-top: 32px;
+
+  &--materials::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 5px;
+    width: 33px;
+    height: 38px;
+    background: url("/img/icon-feature-1.svg") no-repeat;
+  }
+
+  &--style::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 47px;
+    height: 27px;
+    background: url("/img/icon-feature-3.svg") no-repeat;
+  }
+
+  &--like::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    width: 34px;
+    height: 27px;
+    background: url("/img/icon-feature-5.svg") no-repeat;
+  }
+
+  &--manual::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 5px;
+    width: 35px;
+    height: 34px;
+    background: url("/img/icon-feature-2.svg") no-repeat;
+  }
+
+  &--support::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 55px;
+    height: 23px;
+    background: url("/img/icon-feature-4.svg") no-repeat;
+  }
+
+  &--box::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 5px;
+    width: 33px;
+    height: 32px;
+    background: url("/img/icon-feature-6.svg") no-repeat;
+  }
+
+  @media ( $tablet ) {
+    width: 50%;
+    @include font (20px, 22px, bold);
+    margin-bottom: 26px;
+  }
+
+}
+
+
+@media ( $tablet ) {
+  .about__item:nth-child(1) {
+    order: -8;
+  }
+
+  .about__item:nth-child(4) {
+    order: -7;
+  }
+
+  .about__item:nth-child(2) {
+    order: -6;
+  }
+
+  .about__item:nth-child(5) {
+    order: -5;
+  }
+
+}

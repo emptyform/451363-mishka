@@ -1,0 +1,197 @@
+.comment {
+  @include container;
+  margin-bottom: 82px;
+
+  @media ( $tablet ) {
+    background-image: url("/img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 457px;
+    margin-bottom: 135px;
+  }
+
+  @media ( $desktop ) {
+    background-position: 50px 0;
+    background-size: contain;
+    margin-bottom: 160px;
+  }
+
+}
+
+.comment__inner {
+  margin-bottom: 40px;
+
+  @media ( $tablet ) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 77px;
+    padding-bottom: 15px;
+  }
+
+  @media ( $desktop ) {
+    padding-top: 70px;
+  }
+
+}
+
+.comment__title {
+  @include font (25px, 30px, bold);
+  margin: 0;
+  margin-bottom: 25px;
+
+  @media ( $tablet ) {
+    @include font (43px, 50px, bold);
+    margin-bottom: 48px;
+    order: -5;
+  }
+
+  @media ( $desktop ) {
+    @include font (53px, 57px, bold);
+    padding-left: 175/1050*100%;
+  }
+
+}
+
+.comment__item {
+  margin-bottom: 30px;
+
+  @media ( $tablet ) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    margin-bottom: 0;
+  }
+
+  @media ( $desktop ) {
+    padding-left: 175/1050*100%;
+  }
+
+}
+
+.comment__text {
+  @include font (15px, 30px, normal, $contacts-text);
+  margin: 0;
+  margin-bottom: 30px;
+
+  @media ( $tablet ) {
+    @include font (17px, 30px, normal);
+    margin: 0;
+    margin-bottom: 58px;
+  }
+
+  @media ( $desktop ) {
+    margin-bottom: 40px;
+    margin-right: 100px;
+  }
+
+}
+
+.comment__user {
+  margin-bottom: 30px;
+}
+
+.comment__author {
+  @include font (18px, 24px, bold);
+  font-style: normal;
+
+  @media ( $tablet ) {
+    @include font (17px, 24px, bold);
+    margin-bottom: 5px;
+  }
+
+}
+
+.comment__link {
+  @include font (17px, 30px, normal, $catalog-item-name);
+  display: block;
+  text-decoration: none;
+}
+
+.comment__slider {
+  display: flex;
+  position: relative;
+  margin-bottom: 38px;
+  border: solid 1px $feature-table;
+  font-size: 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    height: 50px;
+    border-right: 1px solid $feature-table;
+  }
+
+  @media ( $tablet ) {
+    width: 175px;
+    align-self: flex-end;
+    border: none;
+
+    &::after {
+      display: none;
+    }
+
+  }
+
+}
+
+.comment__slider-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50px;
+  position: relative;
+  font-size: 0;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--prev::after {
+    content: "";
+    position: absolute;
+    width: 56px;
+    height: 26px;
+    left: 50%;
+    top: 25%;
+    transform: translateX(-50%);
+    background-color: $catalog-item-name;
+    background: url("/img/icon-left-arrow.svg") no-repeat;
+  }
+
+  &--next::after {
+    content: "";
+    position: absolute;
+    width: 56px;
+    height: 26px;
+    left: 50%;
+    top: 25%;
+    transform: translateX(-50%);
+    background-color: $catalog-item-name;
+    background: url("/img/icon-right-arrow.svg") no-repeat;
+  }
+
+}
+
+.comment__btn {
+
+  @media ( $tablet ) {
+    order: -4;
+    width: 175px;
+    align-self: flex-start;
+  }
+
+  @media ( $desktop ) {
+    margin-top: 8px;
+  }
+
+}

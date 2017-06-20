@@ -1,111 +1,26 @@
 .btn {
-  width: 260px;
-  height: 52px;
-  border: 2px solid $text-color-gray-dark;
-  background-color: $bg-color-white;
+  display: inline-block;
+  padding: 15px 0;
+  border: 2px solid $contacts-text;
+  text-decoration: none;
+  text-align: center;
+  outline: none;
+  background-color: $bgcolor;
+  color: $contacts-text;
   text-transform: uppercase;
-  @include font (17px, 20px, bold);
-  cursor: pointer;
-  outline: 0;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 20px;
+  width: 100%;
+  box-sizing: border-box;
 
-  &--modal {
-    background-color: $bg-color-green-1;
-    border: 2px solid $bg-color-green-1;
-    color: $bg-color-white;
-
-    @media ( $tablet ) {
-      width: 350px;
-    }
-
+  &:hover {
+    background-color: $contacts-text;
+    color: $bgcolor;
   }
 
-  &--pop-goods {
-
-    @media ( $tablet ) {
-      width: 290px;
-    }
-
-    @media ( $desktop ) {
-      margin-left: 175px;
-    }
-
-  }
-
-  &--reviews {
-    margin: 40px auto;
-
-    @media ( $tablet ) {
-      float: right;
-      margin-top: -345px;
-      width: 175px;
-    }
-
-    @media ( $desktop ) {
-      margin-top: -313px;
-    }
-
-  }
-
-  &--contacts {
-    margin: 40px 30px;
-
-    @media ( $tablet ) {
-      margin: 55px 269px;
-      width: 230px;
-    }
-
-    @media ( $desktop ) {
-      margin-top: 68px;
-      margin-right: 0;
-      margin-left: 175px;
-    }
-
-  }
-
-  // &--contacts {
-  //     text-align: center;
-  //
-  //     @media ( $tablet ) {
-  //       position: absolute;
-  //       bottom: 0;
-  //       left: 0;
-  //       right: 50%;
-  //       text-align: left;
-  //     }
-  //
-  //     @media ( $desktop ) {
-  //       left: 200px;
-  //     }
-  //
-  //   }
-
-  &--cart {
-    width: 22px;
-    height: 20px;
-    border: none;
-    opacity: 0.2;
-    padding: 0;
-  }
-
-  &--video {
-    width: 190px;
-    margin-left: 35px;
-    margin-top: 10px;
-    margin-bottom: 30px;
-
-    @media ( $tablet ) {
-      width: 583px;
-      margin-left: 43px;
-      margin-top: 25px;
-      margin-bottom: 45px;
-    }
-
-    @media ( $desktop ) {
-      width: 228px;
-      margin-left: 80px;
-      margin-top: 45px;
-    }
-
+  &:active {
+    color: $btn-active;
   }
 
 }

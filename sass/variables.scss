@@ -1,14 +1,23 @@
-$bg-color-green-1: #63d1bb;
-$bg-color-green-2: #56c3b2;
-$bg-color-white: #fff;
-$bg-color-gray: #f1f1f1;
-$bg-color-gray-light: #ededed;
-$bg-color-gray-bottom: #e5e5e5;
-$bg-color-gray-table: #ececec;
-$text-color-black: #000;
-$text-color-gray-light: #c7c7c7;
-$text-color-gray-dark: #444;
+$bgcolor: rgba(255, 255, 255, 1);
+$btn-active: rgba(255, 255, 255, 0.3);
+$link-hover: rgba(0, 0, 0, 0.6);
+$link-active: rgba(0, 0, 0, 0.3);
+$catalog-item-name: rgba(0, 0, 0, 1);
+$contacts-text: rgba(68, 68, 68, 1);
+$contacts-link-hover: rgba(70, 193, 174, 1);
+$contacts-link-active: rgba(70, 193, 174, 0.3);
+$content-bg: rgba(249, 249, 249, 1);
+$content-item-bg: rgba(86, 195, 178, 1);
+$feature-week: rgba(99, 209, 187, 1);
+$feature-table: rgba(236, 236, 236, 1);
+$order-category: rgba(98, 209, 186, 1);
+$footer-bg: rgba(241, 241, 241, 1);
+$footer-border: rgba(229, 229, 229, 1);
+$modal-overlay: rgba(255, 255, 255, 0.9);
+$modal-border: rgba(198, 198, 198, 1);
+$modal-label-hover: rgba(199, 199, 199, 1);
+
 
 $mobile: "max-width: 767px";
 $tablet: "min-width: 768px";
-$desktop: "min-width: 1200px";
+$desktop: "min-width: 1150px";

@@ -1,26 +1,13 @@
-@mixin clearfix {
-
-  &::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-}
-
 @mixin width-mobile {
-  width: 260px;
-  margin: 0 auto;
+  min-width: 260px;
 }
 
 @mixin width-tablet {
-  width: 668px;
-  margin: 0 auto;
+  min-width: 768px;
 }
 
 @mixin width-desktop {
-  width: 1050px;
-  margin: 0 auto;
+  min-width: 1150px;
 }
 
 @mixin font ($size: false, $lh: false, $weight: false, $color: false) {
@@ -30,133 +17,15 @@
     @if $color { color: $color; }
 }
 
-@mixin f13h24 {
-  font-size: 13px;
-  line-height: 24px;
-}
+@mixin container {
+  padding: 0 30/320*100%;
 
-@mixin f13h30 {
-  font-size: 13px;
-  line-height: 30px;
-}
+  @media (min-width: 768px) {
+    padding: 0 50/768*100%;
+  }
 
-@mixin f15h20 {
-  font-size: 15px;
-  line-height: 20px;
-}
+  @media (min-width: 1150px) {
+    padding: 0 50/1150*100%;
+  }
 
-@mixin f15h24 {
-  font-size: 15px;
-  line-height: 24px;
-}
-
-@mixin f15h24b {
-  font-size: 15px;
-  line-height: 24px;
-  font-weight: bold;
-}
-
-@mixin f15h30 {
-  font-size: 15px;
-  line-height: 30px;
-}
-
-@mixin f17h16 {
-  font-size: 17px;
-  line-height: 16px;
-}
-
-@mixin f17h16b {
-  font-size: 17px;
-  line-height: 16px;
-  font-weight: bold;
-}
-
-@mixin f17h17b {
-  font-size: 17px;
-  line-height: 17px;
-  font-weight: bold;
-}
-
-@mixin f17h18b {
-  font-size: 17px;
-  line-height: 18px;
-  font-weight: bold;
-}
-
-@mixin f17h20b {
-  font-size: 17px;
-  line-height: 20px;
-  font-weight: bold;
-}
-
-@mixin f17h24b {
-  font-size: 17px;
-  line-height: 24px;
-  font-weight: bold;
-}
-
-@mixin f17h30 {
-  font-size: 17px;
-  line-height: 30px;
-}
-
-@mixin f18h30b {
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: bold;
-}
-
-@mixin f19h18b {
-  font-size: 19px;
-  line-height: 18px;
-  font-weight: bold;
-}
-
-@mixin f19h24b {
-  font-size: 19px;
-  line-height: 24px;
-  font-weight: bold;
-}
-
-@mixin f20h22b {
-  font-size: 20px;
-  line-height: 22px;
-  font-weight: bold;
-}
-
-@mixin f20h24b {
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: bold;
-}
-
-@mixin f20h30b {
-  font-size: 20px;
-  line-height: 30px;
-  font-weight: bold;
-}
-
-@mixin f25h30b {
-  font-size: 25px;
-  line-height: 30px;
-  font-weight: bold;
-}
-
-@mixin f27h30b {
-  font-size: 27px;
-  line-height: 30px;
-  font-weight: bold;
-}
-
-@mixin f43h50b {
-  font-size: 43px;
-  line-height: 50px;
-  font-weight: bold;
-}
-
-@mixin f53h57b {
-  font-size: 53px;
-  line-height: 57px;
-  font-weight: bold;
 }

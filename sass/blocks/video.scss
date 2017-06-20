@@ -1,121 +1,185 @@
 .video {
-  @include width-mobile;
-  margin-top: 30px;
-  margin-bottom: 58px;
-  border: 1px solid $bg-color-gray-light;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
+  margin-bottom: 60px;
+  @include container;
 
   @media ( $tablet ) {
-    @include width-tablet;
-    margin-bottom: 65px;
-    border: none;
-    margin-top: 53px;
-  }
-
-  @media ( $desktop ) {
-    @include width-desktop;
-    margin-top: 58px;
-    margin-bottom: 106px;
+    margin-bottom: 70px;
   }
 
 }
 
-.video__wrapper {
-
-  @media ( $tablet ) {
-    border: 1px solid $bg-color-gray-light;
-  }
+.video__inner {
 
   @media ( $desktop ) {
-    width: 380px;
-    height: 453px;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 110px;
+    position: relative;
   }
 
 }
 
-.video__name {
-  @include font (17px, 24px, bold);
-  width: 130px;
+.video__inner-wrap {
+  border: 1px solid $feature-table;
+  box-sizing: border-box;
+
+  @media ( $tablet ) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media ( $desktop ) {
+    min-height: 455px;
+    width: 35%;
+    padding-left: 75px;
+    padding-right: 60px;
+    box-sizing: border-box;
+
+    &:hover {
+      box-shadow: 0 6px 10px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.1);
+    }
+
+  }
+
+}
+
+.video__title-wrap {
   display: flex;
+  padding: 20px 30px;
   align-items: center;
+  box-sizing: border-box;
+
+  @media ( $tablet ) {
+    margin-top: -40px;
+  }
+
+  @media ( $desktop ) {
+    width: 100%;
+    padding: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 45px;
+    margin-top: 0px;
+  }
+
+}
+
+.video__title-img {
+  width: 32px;
+  height: 32px;
+  margin-right: 25px;
+
+  @media ( $tablet ) {
+    margin-right: 30px;
+  }
+
+}
+
+.video__title-text {
+  @include font (17px, 24px, bold);
+  margin: 0;
 
   @media ( $tablet ) {
     @include font (20px, 24px, bold);
-    width: 350px;
-    margin-top: 35px;
   }
 
   @media ( $desktop ) {
-    width: 155px;
-    flex-wrap: wrap;
-    margin-left: 80px;
-  }
-
-}
-
-.video__icon {
-  margin-left: 34px;
-  margin-right: 25px;
-  width: 32px;
-  height: 32px;
-
-  @media ( $tablet ) {
-    margin-left: 40px;
-    margin-right: 35px;
-  }
-
-  @media ( $desktop ) {
-    margin: 0;
     padding-top: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 28px;
   }
 
 }
 
-.video__text {
-  @include font (13px, 24px);
-  margin-left: 35px;
+.video__block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 150px;
+  width: 260px;
+  margin: 0 auto;
+  background-image: url("/img/video-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 260px;
 
   @media ( $tablet ) {
-    @include font (15px, 30px);
-    margin-left: 40px;
+    order: -1;
+    width: 100%;
+    min-height: 455px;
+    background-image: url("/img/video-mobile@1x.jpg");
+    background-size: 668px;
   }
 
   @media ( $desktop ) {
-    margin-left: 80px;
-    margin-top: 30px;
-    width: 240px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 65%;
+    height: 455px;
+    background-size: 683px;
   }
 
 }
 
-.video__img {
+.video__block-play {
+  width: 101px;
+  height: 77px;
+  transition: 0.3s;
 
-  &-mobile {
-    width: 260px;
-    height: 150px;
-
-    @media ( $tablet ) {
-      display: none;
-    }
-
+  &:hover {
+    transform: scale(1.2);
   }
 
-  &-tablet {
-    display: none;
+  &:active {
+    transform: scale(0.8);
+  }
+}
 
-    @media ( $tablet ) {
-      display: block;
-      width: 668px;
-      height: 455px;
-    }
+.video__desc-wrap {
+  padding-left: 32px;
+  padding-right: 35px;
 
+  @media ( $tablet ) {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
-  &-desktop {
-    display: none;
+  @media ( $desktop ) {
+    box-sizing: border-box;
+    padding: 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+.video__desc-text {
+  @include font (13px, 24px, normal, $contacts-text);
+  margin-top: 30px;
+  margin-bottom: 25px;
+
+  @media ( $tablet ) {
+    @include font (15px, 30px, normal);
+    margin-top: 5px;
+  }
+
+}
+
+.video__btn {
+  margin-bottom: 30px;
+
+  @media ( $tablet ) {
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+
+  @media ( $desktop ) {
+    margin-top: auto;
+    margin-bottom: 60px;
   }
 
 }
