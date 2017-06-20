@@ -1,6 +1,11 @@
 .main-nav {
-  width: 100%;
   position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  margin-top: 1px;
+  z-index: 5;
 
   &--closed {
     display: none;
@@ -40,8 +45,10 @@
   @media ( $tablet ) {
     display: flex;
     flex-direction: row;
+    align-items: center;
     position: absolute;
     top: 100%;
+    left: 50px;
     background-color: transparent;
     z-index: 10;
   }
@@ -62,7 +69,6 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    @include font (17px, 24px, bold);
   }
 
 }
@@ -71,9 +77,10 @@
   display: block;
   border-bottom: 1px solid $feature-table;
   text-decoration: none;
-  padding: 30px 30px 30px 76px;
+  padding: 27px 27px 27px 76px;
   @include font (17px, 24px, bold, $catalog-item-name);
   position: relative;
+  margin: 0;
 
   &:hover {
     color: $link-hover;
@@ -84,32 +91,31 @@
   }
 
   @media ( $tablet ) {
-    border: 0;
+    border: none;
 
     &--catalog {
       @include font (15px, 24px, bold);
       margin-left: 50px;
-      padding: 22px 0;
+      padding: 18px 0;
       width: 167px;
+      margin: 0;
     }
 
     &--form {
       @include font (15px, 24px, bold);
-      padding: 22px 0;
+      padding: 18px 0;
       width: 167px;
     }
 
     &--search {
       font-size: 0;
-      width: 85px;
+      width: 82px;
       border-left: 1px solid $feature-table;
-      padding-left: 0;
-      padding-right: 0;
+      padding: 32px 0;
     }
 
     &--basket {
-      padding-left: 80px;
-      padding-right: 50px;
+      padding: 32px 50px 32px 83px;
       border-left: 1px solid $feature-table;
     }
 
@@ -120,7 +126,7 @@
     &--catalog {
       @include font (17px, 24px, bold);
       margin: 0;
-      padding: 30px 18px 30px 50px;
+      padding: 32px 18px 32px 50px;
       border-right: 1px solid $feature-table;
     }
 
@@ -134,26 +140,35 @@
 
 }
 
-.main-nav__link--search::after {
-  content: "";
+.main-nav__link--search svg {
   position: absolute;
   top: 33px;
-  left: 30px;
+  left: 33px;
   width: 18px;
   height: 19px;
-  background: url("/img/icon-search.svg") no-repeat;
   opacity: 0.2;
+  fill: $link-svg;
 }
 
-.main-nav__link--basket::after {
-  content: "";
+.main-nav__link--basket svg {
   position: absolute;
   top: 33px;
-  left: 30px;
+  left: 31px;
   width: 21px;
   height: 18px;
-  background: url("/img/icon-cart.svg") no-repeat;
   opacity: 0.2;
+  fill: $link-svg;
+}
+
+.main-nav__link--search:hover svg,
+.main-nav__link--basket:hover svg {
+  fill: $feature-week;
+  opacity: 1;
+}
+
+.main-nav__link--search:active svg,
+.main-nav__link--basket:active svg {
+  opacity: 0.3;
 }
 
 .main-nav__toggle {
@@ -183,19 +198,31 @@
   top: 0;
   right: 0;
   width: 20px;
-  height: 14px;
-  background: url("/img/icon-menu-open.svg") no-repeat;
+  height: 2px;
   transition: 0.3s;
+  background-color: $catalog-item-name;
+  box-shadow: 0 6px 0 0 $catalog-item-name,
+              0 12px 0 0 $catalog-item-name;
 }
 
-.main-nav__toggle--opened::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 20px;
-  height: 20px;
-  background: url("/img/icon-menu-close.svg") no-repeat;
-  transition: 0.3s;
-  box-shadow: none;
+.main-nav__toggle--opened {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 22px;
+    height: 2px;
+    background-color: $catalog-item-name;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
 }
