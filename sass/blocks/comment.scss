@@ -1,19 +1,30 @@
 .comment {
   @include container;
-  margin-bottom: 82px;
+  margin-bottom: 45px;
 
   @media ( $tablet ) {
+    background-color: $bgcolor;
     background-image: url("/img/review@1x.jpg");
     background-repeat: no-repeat;
     background-size: contain;
     min-height: 457px;
-    margin-bottom: 135px;
+    margin-bottom: 65px;
+
+    @media ( $tablet-retina ) {
+      background-image: url("/img/review@2x.jpg");
+    }
+
   }
 
   @media ( $desktop ) {
     background-position: 50px 0;
     background-size: contain;
-    margin-bottom: 160px;
+    margin-bottom: 70px;
+
+    @media ( $desktop-retina ) {
+      background-image: url("/img/review@2x.jpg");
+    }
+
   }
 
 }
@@ -113,7 +124,7 @@
   display: flex;
   position: relative;
   margin-bottom: 38px;
-  border: solid 1px $feature-table;
+  border: 1px solid $feature-table;
   font-size: 0;
 
   &::after {
@@ -154,30 +165,6 @@
 
   &:active {
     opacity: 0.3;
-  }
-
-  &--prev::after {
-    content: "";
-    position: absolute;
-    width: 56px;
-    height: 26px;
-    left: 50%;
-    top: 25%;
-    transform: translateX(-50%);
-    background-color: $catalog-item-name;
-    background: url("/img/icon-left-arrow.svg") no-repeat;
-  }
-
-  &--next::after {
-    content: "";
-    position: absolute;
-    width: 56px;
-    height: 26px;
-    left: 50%;
-    top: 25%;
-    transform: translateX(-50%);
-    background-color: $catalog-item-name;
-    background: url("/img/icon-right-arrow.svg") no-repeat;
   }
 
 }

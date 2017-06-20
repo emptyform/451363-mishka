@@ -35,6 +35,15 @@
 
 }
 
+.page-footer__item--logo svg:hover {
+  fill: $contacts-link-hover;
+}
+
+.page-footer__item--logo svg:active {
+  fill: $contacts-link-hover;
+  opacity: 0.3;
+}
+
 .page-footer__item--social {
   font-size: 0;
   border-bottom: 1px solid $footer-border;
@@ -62,17 +71,21 @@
     width: 30px;
     height: 30px;
 
-    &--in {
-      background: url("/img/icon-insta.svg") no-repeat 50% 50%;
+    & svg {
+      fill: $link-svg;
     }
 
     &--fb {
-      background: url("/img/icon-fb.svg") no-repeat 50% 50%;
       margin: 0 30px;
     }
 
-    &--tw {
-      background: url("/img/icon-twitter.svg") no-repeat 50% 50%;
+    &:hover svg {
+      fill: $contacts-link-hover;
+    }
+
+    &:active svg {
+      fill: $contacts-link-hover;
+      opacity: 0.3;
     }
 
 }
@@ -83,16 +96,22 @@
   align-items: flex-start;
   color: $catalog-item-name;
 
+  & svg {
+    fill: $feature-week;
+    width: 27px;
+    height: 34px;
+  }
+
   & span {
     margin-right: 30px;
     margin-top: 5px;
   }
 
-  &:hover span {
+  &:hover {
     opacity: 0.6;
   }
 
-  &:active span {
+  &:active {
     opacity: 0.3;
   }
 
