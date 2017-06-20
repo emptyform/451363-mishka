@@ -1,29 +1,122 @@
 .modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__overlay {
+  position: fixed;
   display: none;
+  top: 0;
+  left: 0;
+  z-index: 90;
+  width: 100%;
+  height: 100%;
+  background-color: $modal-overlay;
+}
 
-  &__wrapper {
-    @include width-mobile;
-  }
+.modal__order {
+  padding: 0 30/320*100%;
+  position: fixed;
+  display: none;
+  min-width: 320px;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+  text-align: center;
+  min-height: 336px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: 1px solid $modal-border;
+  box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
+  background-color: $bgcolor;
+  box-sizing: border-box;
 
-  &__title {
-    @include f25h30b;
-    text-transform: uppercase;
-    text-align: center;
-  }
-
-  &__name {
-    @include f15h30;
-    text-align: center;
+  @media ( $tablet ) {
+    width: 565px;
+    padding-left: 104px;
+    padding-right: 104px;
   }
 
 }
 
-.radio-input {
+.modal__order--show,
+.modal__overlay--show {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.modal__order-title {
+  @include font (25px, 30px, bold);
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding-left: 55px;
+  padding-right: 55px;
+
+  @media ( $tablet ) {
+    @include font (30px, 57px, bold);
+    padding: 0;
+  }
+
+}
+
+.modal__order-select {
+  @include font (15px, 30px, normal);
+  margin: 0;
+  padding: 0;
+
+  @media ( $tablet ) {
+    @include font (17px, 30px, normal);
+  }
+
+}
+
+.modal__order-group {
+  @include font (17px, 20px, bold);
+  margin-top: 26px;
+  margin-bottom: 30px;
+  padding: 0;
+  border: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.modal__order-lable {
+  flex-grow: 1;
+  padding-top: 15px;
+  min-height: 33px;
+  border: 2px solid $feature-table;
+  margin-right: 7px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    border: 2px solid $modal-label-hover;
+  }
+
+  &:active {
+    border: 2px solid $order-category;
+  }
+
+}
+
+.modal__order-size {
   display: none;
 }
 
-.radio-label {
-  width: 80px;
-  height: 50px;
-  border: 2px solid $bg-color-green-1;
+.btn--modal {
+  @include font (17px, 20px, bold, $bgcolor);
+  background-color: $feature-week;
+  border: 0;
+  width: 100%;
+}
+
+.modal__order-size:checked + .modal__order-lable {
+  border: 2px solid $order-category;
 }

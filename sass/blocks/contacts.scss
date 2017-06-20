@@ -1,137 +1,234 @@
+.contacts__header,
+.contacts__address,
+.contacts__btn-wrap {
+  @include container;
+}
+
 .contacts {
 
-  &__wrapper {}
-
-  &__title {
-    @include width-mobile;
-    @include f18h30b;
+  @media ( $desktop ) {
+    margin-bottom: 70px;
   }
 
-  &__table {
-    @include width-mobile;
+}
+
+.contacts__inner {
+
+  @media ( $desktop ) {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-height: 457px;
+  }
+
+}
+
+.contacts__header {
+
+  @media ( $tablet ) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    box-sizing: border-box;
     margin-bottom: 20px;
   }
 
-  &__row {
-    height: 40px;
+  @media ( $desktop ) {
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-top: 62px;
+    margin: 0;
+    width: 50%;
   }
 
-  &__data-left {
-    width: 78px;
-    @include f15h30;
+}
+
+.contacts__title {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  margin: 0;
+  margin-bottom: 25px;
+
+  @media ( $tablet ) {
+    font-size: 43px;
+    font-weight: bold;
+    line-height: 50px;
   }
 
-  &__data-right {
-    @include f15h30;
-
-      &--email {
-        width: 177px;
-      }
-
-      &--adress {
-        width: 140px;
-      }
-
+  @media ( $desktop ) {
+    font-size: 53px;
+    font-weight: bold;
+    line-height: 57px;
+    width: 64%;
+    margin: 0;
   }
 
-  &__map {
+}
 
-    &--mobile {}
+.contacts__address {
 
-    &--tablet {
-      display: none;
+  @media ( $tablet ) {
+    margin-bottom: 30px;
+  }
+
+  @media ( $desktop ) {
+    width: 50%;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+  }
+
+}
+
+.contacts__flag {
+  display: none;
+
+  @media ( $tablet ) {
+    display: block;
+  }
+
+  @media ( $desktop ) {
+    width: 36%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+.contacts__table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+
+.contacts__table tbody {
+
+  @media ( $tablet ) {
+    display: flex;
+  }
+
+  @media ( $desktop ) {
+    flex-direction: column;
+    padding-left: 36%;
+  }
+
+}
+
+.contacts__row {
+  display: flex;
+  margin-bottom: 25px;
+
+  @media ( $tablet ) {
+    width: 50%;
+  }
+
+  @media ( $desktop ) {
+    width: 100%;
+  }
+
+}
+
+.contacts__cell {
+  display: flex;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+  color: $contacts-text;
+
+  &--pad {
+    width: 75/260*100%;
+  }
+
+  @media ( $tablet ) {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 30px;
+
+    &--pad {
+      width: 70/334*100%;
     }
 
-    &--desktop {
-      display: none;
+  }
+
+  @media ( $desktop ) {
+
+    &--pad {
+      margin-right: 15px;
     }
 
   }
 
 }
 
-@media tablet {
-  .contacts {
+.contacts__link {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+  color: $contacts-text;
+  border-bottom: 1px solid $order-category;
+  text-decoration: none;
 
-    &__wrapper {}
+  &:hover {
+    color: $contacts-link-hover;
+  }
 
-    &__title {
-      @include width-tablet;
-    }
+  &:active {
+    color: $contacts-link-active;
+    border-bottom: 1px solid $contacts-link-active;
+  }
 
-    &__table {}
-
-    &__row {}
-
-    &__data-left {}
-
-    &__data-right {
-
-        &--email {}
-
-        &--adress {}
-
-    }
-
-    &__map {
-
-      &--mobile {
-        display: none;
-      }
-
-      &--tablet {
-        display: block;
-      }
-
-      &--desktop {
-        display: none;
-      }
-
-    }
-
+  @media ( $tablet ) {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 30px;
+    align-self: flex-start;
   }
 
 }
 
-@media desktop {
-  .contacts {
+.contacts__map {
+  margin-bottom: 40px;
+  min-height: 457px;
+  font-size: 0;
 
-    &__wrapper {}
+  @media ( $desktop ) {
+    width: 525px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
 
-    &__title {
-      @include width-desktop;
-    }
+}
 
-    &__table {}
+.contacts__btn-wrap {
 
-    &__row {}
+  @media ( $desktop ) {
+    margin: 0;
+    width: 50%;
+    box-sizing: border-box;
+  }
 
-    &__data-left {}
+}
 
-    &__data-right {
+.contacts__btn {
+  margin-bottom: 40px;
 
-        &--email {}
+  @media ( $tablet ) {
+    display: block;
+    width: 230px;
+    margin: 55px auto;
+  }
 
-        &--adress {}
-
-    }
-
-    &__map {
-
-      &--mobile {
-        display: none;
-      }
-
-      &--tablet {
-        display: none;
-      }
-
-      &--desktop {
-        display: block;
-      }
-
-    }
-
+  @media ( $desktop ) {
+    margin: 0;
+    margin-left: 36%;
   }
 
 }

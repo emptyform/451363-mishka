@@ -1,24 +1,26 @@
 .btn {
-  width: 259px;
-  height: 52px;
-  border: 2px solid $text-color-gray-dark;
-  background-color: $bg-color-white;
+  display: inline-block;
+  padding: 15px 0;
+  border: 2px solid $contacts-text;
+  text-decoration: none;
+  text-align: center;
+  outline: none;
+  background-color: $bgcolor;
+  color: $contacts-text;
   text-transform: uppercase;
-  @include f17h20b;
-  cursor: pointer;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 20px;
+  width: 100%;
+  box-sizing: border-box;
 
-  &--modal {
-    background-color: $bg-color-green-1;
-    border: 2px solid $bg-color-green-1;
-    color: $bg-color-white;
+  &:hover {
+    background-color: $contacts-text;
+    color: $bgcolor;
   }
 
-  &--reviews {
-    margin: 40px auto;
-  }
-
-  &--contacts {
-    margin: 40px 30px;
+  &:active {
+    color: $btn-active;
   }
 
 }
