@@ -1,17 +1,10 @@
 .content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: $content-bg;
   margin-bottom: 20px;
-  min-height: 177px;
+  background-color: $content-bg;
 
   @media ( $tablet ) {
-    position: relative;
-    margin: 0;
-    padding: 0;
     margin-bottom: 3px;
-    overflow: hidden;
+    position: relative;
 
     &::after {
       content: "";
@@ -39,12 +32,31 @@
 
 }
 
-.content--index {
-  background: $content-bg url("/img/hero-mobile@1x.jpg") no-repeat top center;
-  margin-top: -18px;
+.content__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $content-bg;
+  min-height: 177px;
+  max-width: $max-width;
+  box-sizing: border-box;
+
+  @media ( $tablet ) {
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+  }
+
+}
+
+.content__inner--index {
+  background: $content-bg url("/img/hero-mobile@1x.jpg") no-repeat;
+  background-position: center -18px;
   overflow: hidden;
-  min-height: 488px;
-  padding-top: 18px;
+  min-height: 470px;
+  margin: 0 auto;
+  max-width: $max-width;
 
   @media ( $mobile-retina ) {
     background-image: url("/img/hero-mobile@2x.jpg");
@@ -113,6 +125,7 @@
 
   @media ( $tablet ) {
     display: none;
+    width: 160px;
   }
 
   @media ( $desktop ) {
@@ -136,8 +149,16 @@
 
   @media ( $desktop ) {
     display: flex;
-    flex-grow: 1;
     font-weight: bold;
+  }
+
+}
+
+.content__nav-item--delivery {
+
+  @media ( $desktop ) {
+    flex-grow: 1;
+    justify-content: flex-end;
   }
 
 }
@@ -169,7 +190,7 @@
   text-align: center;
   word-wrap: break-word;
   flex-grow: 1;
-  padding: 48px 0;
+  padding: 48px 30px;
 
   @media ( $tablet ) {
     @include font (43px, 50px, bold);
@@ -190,8 +211,11 @@
 .content__type {
   margin: 0;
   padding: 0;
-  min-height: 108px;
-  margin-top: 51px;
+  min-height: 211px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-top: 46px;
 
   @media ( $tablet ) {
     display: flex;
@@ -228,15 +252,16 @@
 .content__item--interior {
   background-color: $feature-week;
   position: relative;
+  transition: 0.2s;
 
   & svg {
     position: absolute;
-    right: 30px;
+    right: 40px;
     top: 22px;
     width: 41px;
     height: 62px;
     opacity: 0.5;
-    fill: #149080;
+    fill: $content-item-svg;
   }
 
   &:hover {
@@ -271,15 +296,16 @@
 .content__item--toys {
   background-color: $content-item-bg;
   position: relative;
+  transition: 0.2s;
 
   & svg {
     position: absolute;
-    right: 30/320*100%;
+    right: 30px;
     top: 22px;
     width: 61px;
     height: 61px;
     opacity: 0.5;
-    fill: #149080;
+    fill: $content-item-svg;
   }
 
   &:hover {

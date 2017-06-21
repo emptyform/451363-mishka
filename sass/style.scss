@@ -1,13 +1,12 @@
-@import "mixins";
 @import "variables";
+@import "mixins";
 
 @import "sass/global/normalize";
 @import "sass/global/layout";
 @import "sass/global/fonts";
 
-@import "sass/blocks/modal";
 @import "sass/blocks/btn";
-
+@import "sass/blocks/modal";
 @import "sass/blocks/visually-hidden";
 @import "sass/blocks/content";
 @import "sass/blocks/features";

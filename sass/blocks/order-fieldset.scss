@@ -7,9 +7,14 @@
 
   @media ( $desktop ) {
     margin-top: 128px;
-    margin-bottom: 40px;
+    margin-bottom: 45px;
   }
 
+}
+
+.order__form {
+  max-width: $max-width;
+  margin: 0 auto;
 }
 
 .order__form-wrap {
@@ -28,6 +33,10 @@
 
   @media ( $tablet ) {
     @include font (17px, 30px, normal);
+  }
+
+  @media ( $desktop ) {
+    margin-left: 230/1150*100%;
   }
 
 }
@@ -123,8 +132,10 @@
 
   @media ( $desktop ) {
     width: 225/1150*100%;
-    justify-content: center;
+    box-sizing: border-box;
+    justify-content: flex-start;
     padding-top: 20px;
+    padding-left: 60px;
 
     &--color {
       width: 175/1050*100%;
@@ -137,17 +148,32 @@
 .order__title {
   @include font (17px, 20px, bold, $feature-week);
   text-transform: uppercase;
-  padding-right: 20px;
-}
-
-.order__title-border {
+  position: relative;
   flex-grow: 1;
-  border-top: 1px solid $order-category;
 
-  @media ( $tablet ) {
-    display: none;
+  &::after {
+    position: absolute;
+    content: "";
+    top: 6px;
+    left: 62px;
+    right: 0;
+    height: 1px;
+    background-color: $order-category;
   }
 
+  @media ( $tablet ) {
+    flex-grow: 0;
+
+    &::after {
+      display: none;
+    }
+
+  }
+
+}
+
+.order__title--email::after {
+  left: 82px;
 }
 
 .order__list {

@@ -1,14 +1,27 @@
 .video {
   margin-bottom: 60px;
-  @include container;
 
   @media ( $tablet ) {
-    margin-bottom: 70px;
+    margin-bottom: 65px;
   }
 
 }
 
 .video__inner {
+  @include container;
+  max-width: $max-width;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @media ( $desktop ) {
+    margin-bottom: 100px;
+    position: relative;
+  }
+
+}
+
+.video__wrap {
+  margin: 0 auto;
 
   @media ( $desktop ) {
     display: flex;
@@ -132,6 +145,7 @@
     left: 0;
     width: 65%;
     height: 455px;
+    background-color: $feature-table;
     background-image: url("/img/video-desktop@1x.jpg");
     background-size: 682px;
 
@@ -156,6 +170,7 @@
   &:active {
     transform: scale(0.8);
   }
+
 }
 
 .video__desc-wrap {

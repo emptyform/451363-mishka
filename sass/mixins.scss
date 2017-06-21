@@ -1,15 +1,3 @@
-@mixin width-mobile {
-  min-width: 260px;
-}
-
-@mixin width-tablet {
-  min-width: 768px;
-}
-
-@mixin width-desktop {
-  min-width: 1150px;
-}
-
 @mixin font ($size: false, $lh: false, $weight: false, $color: false) {
     @if $size { font-size: $size; }
     @if $lh { line-height: $lh; }
@@ -18,14 +6,14 @@
 }
 
 @mixin container {
-  padding: 0 30/320*100%;
+  padding: 0 30px;
 
   @media (min-width: 768px) {
-    padding: 0 50/768*100%;
+    padding: 0 50px;
   }
 
   @media (min-width: 1150px) {
-    padding: 0 50/1150*100%;
+    padding: 0 50px;
   }
 
 }

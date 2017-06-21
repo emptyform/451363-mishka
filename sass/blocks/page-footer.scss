@@ -1,9 +1,12 @@
 .page-footer {
   background-color: $footer-bg;
-  @include container;
 }
 
 .page-footer__inner {
+  @include container;
+  max-width: $max-width;
+  margin: 0 auto;
+  box-sizing: border-box;
 
   @media ( $tablet ) {
     display: flex;

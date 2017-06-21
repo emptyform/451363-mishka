@@ -1,5 +1,4 @@
 .comment {
-  @include container;
   margin-bottom: 45px;
 
   @media ( $tablet ) {
@@ -31,6 +30,38 @@
 
 .comment__inner {
   margin-bottom: 40px;
+  max-width: $max-width;
+  margin: 0 auto;
+
+  @media ( $tablet ) {
+    background-color: $bgcolor;
+    background-image: url("/img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 457px;
+    margin-bottom: 65px;
+
+    @media ( $tablet-retina ) {
+      background-image: url("/img/review@2x.jpg");
+    }
+
+  }
+
+  @media ( $desktop ) {
+    background-position: 50px 0;
+    background-size: contain;
+    margin-bottom: 70px;
+
+    @media ( $desktop-retina ) {
+      background-image: url("/img/review@2x.jpg");
+    }
+
+  }
+
+}
+
+.comment__wrap {
+  @include container;
 
   @media ( $tablet ) {
     display: flex;
