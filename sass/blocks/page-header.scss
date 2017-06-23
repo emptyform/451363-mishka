@@ -5,6 +5,10 @@
     border-bottom: 1px solid $feature-table;
   }
 
+  @media ( $desktop ) {
+    margin-top: -1px;
+  }
+
 }
 
 .page-header__inner {
@@ -36,6 +40,7 @@
   align-items: center;
   border-bottom: 1px solid $feature-table;
   width: 100%;
+  margin-top: -3px;
 
   & img:hover {
     opacity: 0.6;

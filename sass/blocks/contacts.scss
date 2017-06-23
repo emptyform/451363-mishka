@@ -5,7 +5,7 @@
     width: 100%;
     height: 7px;
     display: block;
-    background-image: url("/img/bg-zigzag-line.svg");
+    background-image: url("../img/bg-zigzag-line.svg");
     background-size: contain;
     background-repeat: repeat-x;
     margin-bottom: 33px;
@@ -15,7 +15,7 @@
 
     &::before {
       height: 17px;
-      margin-bottom: 50px;
+      margin-bottom: 58px;
     }
 
   }
@@ -210,20 +210,20 @@
   min-height: 457px;
   font-size: 0;
   background-color: $bgcolor;
-  background-image: url("/img/map-mobile@1x.jpg");
+  background-image: url("../img/map-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
 
   @media ( $mobile-retina ) {
-    background-image: url("/img/map-mobile@2x.jpg");
+    background-image: url("../img/map-mobile@2x.jpg");
     background-size: auto 457px;
   }
 
   @media ( $tablet ) {
-    background-image: url("/img/map-tablet@1x.jpg");
+    background-image: url("../img/map-tablet@1x.jpg");
 
     @media ( $tablet-retina ) {
-      background-image: url("/img/map-tablet@2x.jpg");
+      background-image: url("../img/map-tablet@2x.jpg");
       background-size: auto 457px;
     }
 
@@ -237,10 +237,10 @@
     bottom: 0;
     overflow: hidden;
     box-sizing: border-box;
-    background-image: url("/img/map-desktop@1x.jpg");
+    background-image: url("../img/map-desktop@1x.jpg");
 
     @media ( $desktop-retina ) {
-      background-image: url("/img/map-desktop@2x.jpg");
+      background-image: url("../img/map-desktop@2x.jpg");
       background-size: 525px 457px;
     }
 

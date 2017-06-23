@@ -1,31 +1,5 @@
 .comment {
   margin-bottom: 45px;
-
-  @media ( $tablet ) {
-    background-color: $bgcolor;
-    background-image: url("/img/review@1x.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    min-height: 457px;
-    margin-bottom: 65px;
-
-    @media ( $tablet-retina ) {
-      background-image: url("/img/review@2x.jpg");
-    }
-
-  }
-
-  @media ( $desktop ) {
-    background-position: 50px 0;
-    background-size: contain;
-    margin-bottom: 70px;
-
-    @media ( $desktop-retina ) {
-      background-image: url("/img/review@2x.jpg");
-    }
-
-  }
-
 }
 
 .comment__inner {
@@ -35,14 +9,14 @@
 
   @media ( $tablet ) {
     background-color: $bgcolor;
-    background-image: url("/img/review@1x.jpg");
+    background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-size: contain;
     min-height: 457px;
     margin-bottom: 65px;
 
     @media ( $tablet-retina ) {
-      background-image: url("/img/review@2x.jpg");
+      background-image: url("../img/review@2x.jpg");
     }
 
   }
@@ -53,7 +27,7 @@
     margin-bottom: 70px;
 
     @media ( $desktop-retina ) {
-      background-image: url("/img/review@2x.jpg");
+      background-image: url("../img/review@2x.jpg");
     }
 
   }
@@ -137,6 +111,9 @@
 .comment__author {
   @include font (18px, 24px, bold);
   font-style: normal;
+  color: black;
+  display: block;
+  text-decoration: none;
 
   @media ( $tablet ) {
     @include font (17px, 24px, bold);
@@ -147,6 +124,7 @@
 
 .comment__link {
   @include font (17px, 30px, normal, $catalog-item-name);
+  font-style: normal;
   display: block;
   text-decoration: none;
 }
@@ -189,6 +167,9 @@
   height: 50px;
   position: relative;
   font-size: 0;
+  cursor: pointer;
+  border: none;
+  background-color: $bgcolor;
 
   &:hover {
     opacity: 0.6;

@@ -58,7 +58,7 @@
   @media ( $tablet ) {
     justify-content: flex-end;
     align-items: center;
-    padding-top: 5px;
+    padding-top: 2px;
   }
 
 }
@@ -68,28 +68,28 @@
 }
 
 .page-footer__social-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
 
-    & svg {
-      fill: $link-svg;
-    }
+  & svg {
+    fill: $link-svg;
+  }
 
-    &--fb {
-      margin: 0 30px;
-    }
+  &--fb {
+    margin: 0 30px;
+  }
 
-    &:hover svg {
-      fill: $contacts-link-hover;
-    }
+  &:hover svg {
+    fill: $contacts-link-hover;
+  }
 
-    &:active svg {
-      fill: $contacts-link-hover;
-      opacity: 0.3;
-    }
+  &:active svg {
+    fill: $contacts-link-hover;
+    opacity: 0.3;
+  }
 
 }
 
@@ -101,13 +101,13 @@
 
   & svg {
     fill: $feature-week;
-    width: 27px;
-    height: 34px;
+    width: 41px;
+    height: 41px;
   }
 
   & span {
-    margin-right: 30px;
-    margin-top: 5px;
+    margin-right: 21px;
+    margin-top: 9px;
   }
 
   &:hover {

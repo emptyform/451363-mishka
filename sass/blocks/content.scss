@@ -1,5 +1,5 @@
 .content {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   background-color: $content-bg;
 
   @media ( $tablet ) {
@@ -13,7 +13,7 @@
       bottom: -9px;
       left: 0;
       right: 0;
-      background-image: url("/img/bg-zigzag-fill.svg");
+      background-image: url("../img/bg-zigzag-fill.svg");
       background-repeat: repeat-x;
       z-index: 5;
     }
@@ -51,7 +51,7 @@
 }
 
 .content__inner--index {
-  background: $content-bg url("/img/hero-mobile@1x.jpg") no-repeat;
+  background: $content-bg url("../img/hero-mobile@1x.jpg") no-repeat;
   background-position: center -18px;
   overflow: hidden;
   min-height: 470px;
@@ -59,12 +59,12 @@
   max-width: $max-width;
 
   @media ( $mobile-retina ) {
-    background-image: url("/img/hero-mobile@2x.jpg");
+    background-image: url("../img/hero-mobile@2x.jpg");
     background-size: auto 373px;
   }
 
   @media ( $tablet ) {
-    background: $bgcolor url("/img/hero-desktop@1x.jpg") no-repeat top center;
+    background: $bgcolor url("../img/hero-desktop@1x.jpg") no-repeat top center;
     margin-top: 0;
     padding-left: 50px;
     padding-right: 50px;
@@ -72,17 +72,17 @@
     padding-top: 58px;
 
     @media ( $tablet-retina ) {
-      background-image: url("/img/hero-desktop@2x.jpg");
+      background-image: url("../img/hero-desktop@2x.jpg");
       background-size: auto 746px;
     }
 
   }
 
   @media ( $desktop ) {
-    background: $bgcolor url("/img/hero-desktop@1x.jpg") no-repeat top center;
+    background: $bgcolor url("../img/hero-desktop@1x.jpg") no-repeat top center;
 
     @media ( $desktop-retina ) {
-      background-image: url("/img/hero-desktop@2x.jpg");
+      background-image: url("../img/hero-desktop@2x.jpg");
       background-size: auto 746px;
     }
 
@@ -191,19 +191,17 @@
   word-wrap: break-word;
   flex-grow: 1;
   padding: 48px 30px;
+  margin-top: 23px;
 
   @media ( $tablet ) {
     @include font (43px, 50px, bold);
-    margin-top: 48px;
-
-    & br:first-of-type {
-      display: none;
-    }
-
+    margin-top: 42px;
   }
 
   @media ( $desktop ) {
     @include font (53px, 57px, bold);
+    align-self: center;
+    width: 615px;
   }
 
 }
@@ -345,4 +343,8 @@
 .content__item--interior:active svg,
 .content__item--toys:active svg {
   opacity: 0.3;
+}
+
+.content__item-name {
+  width: 125px;
 }

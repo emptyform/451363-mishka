@@ -2,7 +2,7 @@
   margin-bottom: 50px;
 
   @media ( $tablet ) {
-    margin-top: 65px;
+    margin-top: 70px;
   }
 
   @media ( $desktop ) {
@@ -29,7 +29,7 @@
 .order__desc {
   @include font (13px, 24px, normal);
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 23px;
 
   @media ( $tablet ) {
     @include font (17px, 30px, normal);
@@ -85,7 +85,7 @@
 
     &--fio {
       margin-top: 20px;
-      margin-bottom: 28px;
+      margin-bottom: 22px;
     }
 
     &--contacts {
@@ -113,11 +113,11 @@
   }
 
   &--fio {
-    margin-bottom: 30px;
+    margin-bottom: 27px;
   }
 
   &--contacts {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 
   &--extra {
@@ -127,7 +127,7 @@
   @media ( $tablet ) {
     width: 25%;
     align-self: flex-start;
-    padding-top: 20px;
+    padding-top: 19px;
   }
 
   @media ( $desktop ) {
@@ -166,6 +166,10 @@
 
     &::after {
       display: none;
+    }
+
+    &--type {
+      margin-top: 5px;
     }
 
   }
@@ -211,8 +215,8 @@
     position: absolute;
     top: 7px;
     right: 7px;
-    width: 32px;
-    height: 25px;
+    width: 29px;
+    height: 36px;
   }
 
   &--extra {
@@ -232,7 +236,7 @@
       flex-direction: row;
       flex-wrap: wrap;
       width: 75%;
-      margin-top: 5px;
+      margin-top: 6px;
       justify-content: space-between;
     }
 
@@ -269,6 +273,8 @@
 
     &--color {
       justify-content: flex-start;
+
+      margin-bottom: 15px;
     }
 
   }
@@ -283,7 +289,7 @@
   @media ( $tablet ) {
     flex-direction: row;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
   }
 
 }
@@ -340,8 +346,10 @@
 
   @media ( $tablet ) {
     @include font (19px, 19px, normal);
+    padding-top: 15px;
     padding-left: 15px;
     padding-right: 70px;
+    padding-bottom: 16px;
   }
 
 }
@@ -350,9 +358,9 @@
   @include font (17px, 18px, bold);
   position: relative;
   box-sizing: border-box;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
   padding: 10px 0;
-  padding-left: 65px;
+  padding-left: 63px;
   width: 250px;
 
   &--color {
@@ -404,10 +412,15 @@
     &--type {
       width: auto;
       margin-bottom: 40px;
+
+      padding-top: 15px;
+      padding-bottom: 1px;
     }
 
     &--color {
       margin-bottom: 38px;
+      padding-top: 16px;
+      padding-bottom: 3px;
       width: 240px;
     }
 
@@ -420,7 +433,6 @@
       width: 54px;
       height: 54px;
       top: 50%;
-      margin-top: -25px;
       padding: 15px;
     }
 
@@ -437,7 +449,7 @@
 }
 
 .order__input--checkbox:checked + .order__label--color::before {
-  background: url("/img/icon-tick.svg") no-repeat center;
+  background: url("../img/icon-tick.svg") no-repeat center;
 }
 
 .order__input--radio:checked + .order__label--type::before {
@@ -458,6 +470,8 @@
 
   @media ( $tablet ) {
     width: 230px;
+
+    margin: -4px 0px -6px;
   }
 
   @media ( $desktop ) {
