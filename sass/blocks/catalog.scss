@@ -1,6 +1,5 @@
 .catalog {
   margin-bottom: 30px;
-  @include container;
 
   @media ( $tablet ) {
     padding-top: 40px;
@@ -13,6 +12,10 @@
 }
 
 .catalog__inner {
+  @include container;
+  box-sizing: border-box;
+  max-width: $max-width;
+  margin: 0 auto;
   margin-top: 30px;
 
   @media ( $desktop ) {
@@ -20,11 +23,12 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 35px;
   }
 
 }
 
-.catalog-item {
+.catalog__item {
   margin-bottom: 30px;
   border: 1px solid $feature-table;
 
@@ -46,12 +50,12 @@
     flex-direction: column;
     width: 315px;
     min-height: 660px;
-    margin-bottom: 25px;
+    margin-bottom: 22px;
   }
 
 }
 
-.catalog-item__photo {
+.catalog__photo {
   font-size: 0;
 
   & img {
@@ -82,7 +86,7 @@
 
 }
 
-.catalog-item__desc {
+.catalog__desc {
   padding: 0 25px;
 
   @media ( $tablet ) {
@@ -98,7 +102,7 @@
 
 }
 
-.catalog-item__name {
+.catalog__name {
   display: block;
   margin-top: 27px;
   margin-bottom: 5px;
@@ -120,12 +124,13 @@
   }
 
   @media ( $desktop ) {
+    margin-top: 22px;
     margin-right: 30px;
   }
 
 }
 
-.catalog-item__param {
+.catalog__param {
   display: block;
   @include font (13px, 30px, normal);
   margin-bottom: 18px;
@@ -141,7 +146,7 @@
 
 }
 
-.catalog-item__desc-wrap {
+.catalog__desc-wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -155,7 +160,7 @@
 
 }
 
-.catalog-item__price {
+.catalog__price {
   @include font (15px, 24px, bold);
   display: block;
 
@@ -165,7 +170,7 @@
 
 }
 
-.catalog-item__basket {
+.catalog__basket {
   font-size: 0;
   position: relative;
 
@@ -176,12 +181,12 @@
 
 }
 
-.catalog-item__basket:hover svg {
+.catalog__basket:hover svg {
   fill: $feature-week;
   opacity: 1;
 }
 
-.catalog-item__basket:active svg {
+.catalog__basket:active svg {
   fill: $feature-week;
   opacity: 0.3;
 }

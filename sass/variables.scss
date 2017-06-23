@@ -7,6 +7,7 @@ $catalog-item-name: rgba(0, 0, 0, 1);
 $contacts-text: rgba(68, 68, 68, 1);
 $contacts-link-hover: rgba(70, 193, 174, 1);
 $contacts-link-active: rgba(70, 193, 174, 0.3);
+$content-item-svg: rgba(20, 144, 128, 1);
 $content-bg: rgba(249, 249, 249, 1);
 $content-item-bg: rgba(86, 195, 178, 1);
 $content-item-bg-hover: rgba(89, 213, 188, 1);
@@ -19,11 +20,10 @@ $modal-overlay: rgba(255, 255, 255, 0.9);
 $modal-border: rgba(198, 198, 198, 1);
 $modal-label-hover: rgba(199, 199, 199, 1);
 
-
+$max-width: 1150px;
 $mobile: "max-width: 767px";
 $tablet: "min-width: 768px";
 $desktop: "min-width: 1150px";
-
 $mobile-retina: "min-resolution: 1.5dppx) and (max-width: 767px), (min-resolution: 144dpi) and (max-width: 767px";
 $tablet-retina: "min-resolution: 1.5dppx) and (min-width: 768px) and (max-width: 1149px), (min-resolution: 144dpi) and (min-width: 768px) and (max-width: 1149px";
 $desktop-retina: "min-resolution: 1.5dppx) and (min-width: 1150px), (min-resolution: 144dpi) and (min-width: 1150px";

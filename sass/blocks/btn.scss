@@ -4,13 +4,11 @@
   border: 2px solid $contacts-text;
   text-decoration: none;
   text-align: center;
+  vertical-align: middle;
   outline: none;
   background-color: $bgcolor;
-  color: $contacts-text;
+  @include font (17px, 20px, bold, $contacts-text);
   text-transform: uppercase;
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 20px;
   width: 100%;
   box-sizing: border-box;
 

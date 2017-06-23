@@ -6,7 +6,7 @@
     width: 100%;
     height: 7px;
     display: block;
-    background-image: url("/img/bg-zigzag-line.svg");
+    background-image: url("../img/bg-zigzag-line.svg");
     background-size: contain;
     background-repeat: repeat-x;
     margin-bottom: 27px;
@@ -27,7 +27,7 @@
 
     &::before {
       height: 23px;
-      margin-bottom: 60px;
+      margin-bottom: 65px;
     }
 
   }
@@ -35,10 +35,13 @@
 }
 
 .about__inner {
+  max-width: $max-width;
+  box-sizing: border-box;
+  margin: 0 auto;
   @include container;
 
   @media ( $desktop ) {
-    padding: 0 225/1150*100%;
+    padding: 0 224px;
   }
 
 }
@@ -152,4 +155,8 @@
     order: -5;
   }
 
+}
+
+.about__item-name {
+  width: 295px;
 }

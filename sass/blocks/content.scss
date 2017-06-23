@@ -1,17 +1,10 @@
 .content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  margin-bottom: 22px;
   background-color: $content-bg;
-  margin-bottom: 20px;
-  min-height: 177px;
 
   @media ( $tablet ) {
-    position: relative;
-    margin: 0;
-    padding: 0;
     margin-bottom: 3px;
-    overflow: hidden;
+    position: relative;
 
     &::after {
       content: "";
@@ -20,7 +13,7 @@
       bottom: -9px;
       left: 0;
       right: 0;
-      background-image: url("/img/bg-zigzag-fill.svg");
+      background-image: url("../img/bg-zigzag-fill.svg");
       background-repeat: repeat-x;
       z-index: 5;
     }
@@ -39,20 +32,39 @@
 
 }
 
-.content--index {
-  background: $content-bg url("/img/hero-mobile@1x.jpg") no-repeat top center;
-  margin-top: -18px;
+.content__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $content-bg;
+  min-height: 177px;
+  max-width: $max-width;
+  box-sizing: border-box;
+
+  @media ( $tablet ) {
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+  }
+
+}
+
+.content__inner--index {
+  background: $content-bg url("../img/hero-mobile@1x.jpg") no-repeat;
+  background-position: center -18px;
   overflow: hidden;
-  min-height: 488px;
-  padding-top: 18px;
+  min-height: 470px;
+  margin: 0 auto;
+  max-width: $max-width;
 
   @media ( $mobile-retina ) {
-    background-image: url("/img/hero-mobile@2x.jpg");
+    background-image: url("../img/hero-mobile@2x.jpg");
     background-size: auto 373px;
   }
 
   @media ( $tablet ) {
-    background: $bgcolor url("/img/hero-desktop@1x.jpg") no-repeat top center;
+    background: $bgcolor url("../img/hero-desktop@1x.jpg") no-repeat top center;
     margin-top: 0;
     padding-left: 50px;
     padding-right: 50px;
@@ -60,17 +72,17 @@
     padding-top: 58px;
 
     @media ( $tablet-retina ) {
-      background-image: url("/img/hero-desktop@2x.jpg");
+      background-image: url("../img/hero-desktop@2x.jpg");
       background-size: auto 746px;
     }
 
   }
 
   @media ( $desktop ) {
-    background: $bgcolor url("/img/hero-desktop@1x.jpg") no-repeat top center;
+    background: $bgcolor url("../img/hero-desktop@1x.jpg") no-repeat top center;
 
     @media ( $desktop-retina ) {
-      background-image: url("/img/hero-desktop@2x.jpg");
+      background-image: url("../img/hero-desktop@2x.jpg");
       background-size: auto 746px;
     }
 
@@ -113,6 +125,7 @@
 
   @media ( $tablet ) {
     display: none;
+    width: 160px;
   }
 
   @media ( $desktop ) {
@@ -136,8 +149,16 @@
 
   @media ( $desktop ) {
     display: flex;
-    flex-grow: 1;
     font-weight: bold;
+  }
+
+}
+
+.content__nav-item--delivery {
+
+  @media ( $desktop ) {
+    flex-grow: 1;
+    justify-content: flex-end;
   }
 
 }
@@ -169,20 +190,18 @@
   text-align: center;
   word-wrap: break-word;
   flex-grow: 1;
-  padding: 48px 0;
+  padding: 48px 30px;
+  margin-top: 23px;
 
   @media ( $tablet ) {
     @include font (43px, 50px, bold);
-    margin-top: 48px;
-
-    & br:first-of-type {
-      display: none;
-    }
-
+    margin-top: 42px;
   }
 
   @media ( $desktop ) {
     @include font (53px, 57px, bold);
+    align-self: center;
+    width: 615px;
   }
 
 }
@@ -190,8 +209,11 @@
 .content__type {
   margin: 0;
   padding: 0;
-  min-height: 108px;
-  margin-top: 51px;
+  min-height: 211px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-top: 46px;
 
   @media ( $tablet ) {
     display: flex;
@@ -228,15 +250,16 @@
 .content__item--interior {
   background-color: $feature-week;
   position: relative;
+  transition: 0.2s;
 
   & svg {
     position: absolute;
-    right: 30px;
+    right: 40px;
     top: 22px;
     width: 41px;
     height: 62px;
     opacity: 0.5;
-    fill: #149080;
+    fill: $content-item-svg;
   }
 
   &:hover {
@@ -271,15 +294,16 @@
 .content__item--toys {
   background-color: $content-item-bg;
   position: relative;
+  transition: 0.2s;
 
   & svg {
     position: absolute;
-    right: 30/320*100%;
+    right: 30px;
     top: 22px;
     width: 61px;
     height: 61px;
     opacity: 0.5;
-    fill: #149080;
+    fill: $content-item-svg;
   }
 
   &:hover {
@@ -319,4 +343,8 @@
 .content__item--interior:active svg,
 .content__item--toys:active svg {
   opacity: 0.3;
+}
+
+.content__item-name {
+  width: 125px;
 }
