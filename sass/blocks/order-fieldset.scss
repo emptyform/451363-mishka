@@ -62,7 +62,7 @@
   }
 
   @media ( $desktop ) {
-    margin-right: 176/1150*100%;
+    margin-right: 14%;
 
     &--color {
       margin-right: 0;
@@ -101,6 +101,14 @@
 
   }
 
+  @media ( $desktop ) {
+
+    &--contacts {
+      padding-top: 45px;
+    }
+
+  }
+
 }
 
 .order__title-wrap {
@@ -131,7 +139,7 @@
   }
 
   @media ( $desktop ) {
-    width: 225/1150*100%;
+    width: 20%;
     box-sizing: border-box;
     justify-content: flex-start;
     padding-top: 20px;
@@ -198,25 +206,9 @@
     position: relative;
   }
 
-  &--tel svg {
-    position: absolute;
-    top: 7px;
-    right: 7px;
-    width: 25px;
-    height: 24px;
-  }
-
   &--email {
     margin-bottom: 30px;
     position: relative;
-  }
-
-  &--email svg {
-    position: absolute;
-    top: 7px;
-    right: 7px;
-    width: 29px;
-    height: 36px;
   }
 
   &--extra {
@@ -245,38 +237,55 @@
       margin-bottom: 20px;
     }
 
-    &--tel svg {
-      top: 10px;
-      right: 25px;
-    }
-
     &--email {
       width: 75%;
-    }
-
-    &--email svg {
-      top: 10px;
-      right: 25px;
     }
 
   }
 
   @media ( $desktop ) {
 
-    &--tel svg {
-      right: 5px;
-    }
-
-    &--email svg {
-      right: 5px;
-    }
-
     &--color {
       justify-content: flex-start;
-
       margin-bottom: 15px;
     }
 
+  }
+
+}
+
+.order__list-tel-svg {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  width: 25px;
+  height: 24px;
+
+  @media ( $tablet ) {
+    top: 10px;
+    right: 25px;
+  }
+
+  @media ( $desktop ) {
+    right: 5px;
+  }
+
+}
+
+.order__list-email-svg {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  width: 29px;
+  height: 36px;
+
+  @media ( $tablet ) {
+    top: 10px;
+    right: 25px;
+  }
+
+  @media ( $desktop ) {
+    right: 5px;
   }
 
 }
@@ -456,12 +465,15 @@
   background-color: $order-category;
 }
 
-.order__field + svg {
+.order__field + .order__list-tel-svg,
+.order__field + .order__list-email-svg {
   opacity: 0.2;
 }
 
-.order__field:hover + svg,
-.order__field:focus + svg {
+.order__field:hover + .order__list-tel-svg,
+.order__field:hover + .order__list-email-svg,
+.order__field:focus + .order__list-tel-svg,
+.order__field:focus + .order__list-email-svg {
   fill: $order-category;
   opacity: 1;
 }

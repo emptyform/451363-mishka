@@ -87,7 +87,7 @@
 }
 
 .comment__text {
-  @include font (15px, 30px, normal, $contacts-text);
+  @include font (15.1px, 30px, normal, $contacts-text);
   margin: 0;
   margin-bottom: 30px;
 

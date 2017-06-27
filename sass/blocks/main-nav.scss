@@ -148,7 +148,7 @@
 
 }
 
-.main-nav__link--search svg {
+.main-nav__link-search-svg {
   position: absolute;
   top: 33px;
   left: 33px;
@@ -158,7 +158,7 @@
   fill: $link-svg;
 }
 
-.main-nav__link--basket svg {
+.main-nav__link-basket-svg {
   position: absolute;
   top: 33px;
   left: 31px;
@@ -168,14 +168,14 @@
   fill: $link-svg;
 }
 
-.main-nav__link--search:hover svg,
-.main-nav__link--basket:hover svg {
+.main-nav__link-search-svg:hover,
+.main-nav__link-basket-svg:hover {
   fill: $feature-week;
   opacity: 1;
 }
 
-.main-nav__link--search:active svg,
-.main-nav__link--basket:active svg {
+.main-nav__link-search-svg:active,
+.main-nav__link-basket-svg:active {
   opacity: 0.3;
 }
 

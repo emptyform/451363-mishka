@@ -62,7 +62,7 @@
 
 .video__title-wrap {
   display: flex;
-  padding: 20px 30px;
+  padding: 24px 30px;
   align-items: center;
   box-sizing: border-box;
 
@@ -110,7 +110,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 150px;
+  height: 150px;
   width: 260px;
   margin: 0 auto;
   background-color: $bgcolor;
@@ -126,7 +126,7 @@
   @media ( $tablet ) {
     order: -1;
     width: 100%;
-    min-height: 455px;
+    height: 455px;
     background-image: url("../img/video-tablet@1x.jpg");
     background-size: 668px;
     background-position: center;
@@ -161,6 +161,12 @@
 .video__block-play {
   width: 102px;
   height: 77px;
+}
+
+.video__block-play-btn {
+  background: none;
+  border: none;
+  outline: 0;
   transition: 0.3s;
 
   &:hover {
@@ -193,9 +199,9 @@
 }
 
 .video__desc-text {
-  @include font (13px, 24px, normal, $contacts-text);
+  @include font (13.8px, 24px, normal, $contacts-text);
   margin-top: 30px;
-  margin-bottom: 25px;
+  margin-bottom: 22px;
 
   @media ( $tablet ) {
     @include font (15px, 30px, normal);

@@ -16,7 +16,7 @@
             <picture>
               <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-              <img src="img/logo-mobile.svg" width="86" height="35" alt="Logotype">
+              <img class="page-header__logo-img" src="img/logo-mobile.svg" width="86" height="35" alt="Logotype">
             </picture>
           </a>
         </div>
@@ -29,7 +29,7 @@
           <ul class="main-nav__user-list">
             <li class="main-nav__item">
               <a class="main-nav__link main-nav__link--search" href="#">
-                <svg width="18" height="19">
+                <svg class="main-nav__link-search-svg" width="18" height="19">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search"></use>
                 </svg>
                 Поиск по сайту
@@ -37,7 +37,7 @@
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link main-nav__link--basket" href="#">
-                <svg width="21" height="18">
+                <svg class="main-nav__link-basket-svg" width="21" height="18">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use>
                 </svg>
                 Корзина: <span>пока пуста</span>
@@ -72,7 +72,7 @@
                 <picture>
                   <source media="(min-width: 1150px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
-                  <img src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" width="260" height="195" alt="Товар каталога">
+                  <img class="catalog__photo-img" src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" width="260" height="195" alt="Товар каталога">
                 </picture>
               </a>
             </div>
@@ -82,7 +82,7 @@
               <div class="catalog__desc-wrap">
                 <span class="catalog__price">1 200 руб.</span>
                 <a class="catalog__basket btn__order" href="order.html">
-                  <svg width="21" height="18">
+                  <svg class="catalog__basket-svg" width="21" height="18">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use>
                   </svg>
                   Корзина
@@ -96,7 +96,7 @@
                 <picture>
                   <source media="(min-width: 1150px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
-                  <img src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" width="260" height="195" alt="Товар каталога">
+                  <img class="catalog__photo-img" src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" width="260" height="195" alt="Товар каталога">
                 </picture>
               </a>
             </div>
@@ -106,7 +106,7 @@
               <div class="catalog__desc-wrap">
                 <span class="catalog__price">690 руб.</span>
                 <a class="catalog__basket btn__order" href="order.html">
-                  <svg width="21" height="18">
+                  <svg class="catalog__basket-svg" width="21" height="18">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use>
                   </svg>
                   Корзина
@@ -120,7 +120,7 @@
                 <picture>
                   <source media="(min-width: 1150px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
-                  <img src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" width="260" height="195" alt="Товар каталога">
+                  <img class="catalog__photo-img" src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" width="260" height="195" alt="Товар каталога">
                 </picture>
               </a>
             </div>
@@ -130,7 +130,7 @@
               <div class="catalog__desc-wrap">
                 <span class="catalog__price">1 500 руб.</span>
                 <a class="catalog__basket btn__order" href="order.html">
-                  <svg width="21" height="18">
+                  <svg class="catalog__basket-svg" width="21" height="18">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use>
                   </svg>
                   Корзина
@@ -151,9 +151,11 @@
                 <h2 class="video__title-text">Процесс производства</h2>
               </div>
               <div class="video__block">
-                <svg class="video__block-play" width="102" height="78">
-                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-play"></use>
-                </svg>
+                <button class="video__block-play-btn">
+                  <svg class="video__block-play" width="102" height="78">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-play"></use>
+                  </svg>
+                </button>
               </div>
               <div class="video__desc-wrap">
                 <p class="video__desc-text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
@@ -167,26 +169,26 @@
     <footer class="page-footer">
       <div class="page-footer__inner">
         <div class="page-footer__item page-footer__item--logo">
-          <svg width="102" height="34">
+          <svg class="page-footer__item-logo-svg" width="102" height="34">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-footer"></use>
           </svg>
         </div>
         <div class="page-footer__item page-footer__item--social">
           <div class="page-footer__social-wrap">
             <a class="page-footer__social-link page-footer__social-link--in" href="#">
-              <svg width="22" height="21">
+              <svg class="page-footer__social-link-svg" width="22" height="21">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-insta"></use>
               </svg>
               Instagram
             </a>
             <a class="page-footer__social-link page-footer__social-link--fb" href="#">
-              <svg width="15" height="29">
+              <svg class="page-footer__social-link-svg" width="15" height="29">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-fb"></use>
               </svg>
               Facebook
             </a>
             <a class="page-footer__social-link page-footer__social-link--tw" href="#">
-              <svg width="24" height="20">
+              <svg class="page-footer__social-link-svg" width="24" height="20">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use>
               </svg>
               Twitter
@@ -195,8 +197,8 @@
         </div>
         <div class="page-footer__item page-footer__item--dev">
           <a class="page-footer__dev-link" href="https://htmlacademy.ru/intensive/adaptive">
-            <span>Разработано</span>
-            <svg width="27" height="34">
+            <span class="page-footer__dev-span">Разработано</span>
+            <svg class="page-footer__dev-svg" width="27" height="34">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#htmlacademy"></use>
             </svg>
           </a>
