@@ -38,11 +38,11 @@
 
 }
 
-.page-footer__item--logo svg:hover {
+.page-footer__item-logo-svg:hover {
   fill: $contacts-link-hover;
 }
 
-.page-footer__item--logo svg:active {
+.page-footer__item-logo-svg:active {
   fill: $contacts-link-hover;
   opacity: 0.3;
 }
@@ -74,19 +74,20 @@
   width: 30px;
   height: 30px;
 
-  & svg {
-    fill: $link-svg;
-  }
-
   &--fb {
     margin: 0 30px;
   }
 
-  &:hover svg {
+}
+
+.page-footer__social-link-svg {
+  fill: $link-svg;
+
+  &:hover {
     fill: $contacts-link-hover;
   }
 
-  &:active svg {
+  &:active {
     fill: $contacts-link-hover;
     opacity: 0.3;
   }
@@ -99,17 +100,6 @@
   align-items: flex-start;
   color: $catalog-item-name;
 
-  & svg {
-    fill: $feature-week;
-    width: 41px;
-    height: 41px;
-  }
-
-  & span {
-    margin-right: 21px;
-    margin-top: 9px;
-  }
-
   &:hover {
     opacity: 0.6;
   }
@@ -118,4 +108,15 @@
     opacity: 0.3;
   }
 
+}
+
+.page-footer__dev-span {
+  margin-right: 21px;
+  margin-top: 9px;
+}
+
+.page-footer__dev-svg {
+  fill: $feature-week;
+  width: 41px;
+  height: 41px;
 }

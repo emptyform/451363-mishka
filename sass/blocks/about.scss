@@ -1,5 +1,5 @@
 .about {
-  margin-bottom: 50px;
+  margin-bottom: 53px;
 
   &::before {
     content: "";
@@ -81,60 +81,60 @@
   position: relative;
   margin-top: 32px;
 
-  &--materials svg {
-    position: absolute;
-    top: 0;
-    left: 5px;
-    width: 33px;
-    height: 38px;
-  }
-
-  &--style svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 47px;
-    height: 27px;
-  }
-
-  &--like svg {
-    position: absolute;
-    top: 3px;
-    left: 5px;
-    width: 34px;
-    height: 27px;
-  }
-
-  &--manual svg {
-    position: absolute;
-    top: 0;
-    left: 5px;
-    width: 35px;
-    height: 34px;
-  }
-
-  &--support svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 55px;
-    height: 23px;
-  }
-
-  &--box svg {
-    position: absolute;
-    top: 0;
-    left: 5px;
-    width: 33px;
-    height: 32px;
-  }
-
   @media ( $tablet ) {
     width: 50%;
     @include font (20px, 22px, bold);
     margin-bottom: 26px;
   }
 
+}
+
+.about__item-materials-svg {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  width: 33px;
+  height: 38px;
+}
+
+.about__item-style-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 47px;
+  height: 27px;
+}
+
+.about__item-like-svg {
+  position: absolute;
+  top: 3px;
+  left: 5px;
+  width: 34px;
+  height: 27px;
+}
+
+.about__item-manual-svg {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  width: 35px;
+  height: 34px;
+}
+
+.about__item-support-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 55px;
+  height: 23px;
+}
+
+.about__item-box-svg {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  width: 33px;
+  height: 32px;
 }
 
 
@@ -158,5 +158,5 @@
 }
 
 .about__item-name {
-  width: 295px;
+  width: 283px;
 }

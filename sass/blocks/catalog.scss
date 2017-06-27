@@ -58,30 +58,29 @@
 .catalog__photo {
   font-size: 0;
 
-  & img {
-    width: 100%;
-    height: auto;
-  }
-
   @media ( $tablet ) {
     display: flex;
     justify-content: flex-start;
     width: 50%;
-
-    & img {
-      width: auto;
-      min-height: 334px;
-    }
-
   }
 
   @media ( $desktop ) {
     width: 100%;
+  }
 
-    & img {
-      min-height: 460px;
-    }
+}
 
+.catalog__photo-img {
+  width: 100%;
+  height: auto;
+
+  @media ( $tablet ) {
+    width: auto;
+    min-height: 334px;
+  }
+
+  @media ( $desktop ) {
+    min-height: 460px;
   }
 
 }
@@ -173,20 +172,20 @@
 .catalog__basket {
   font-size: 0;
   position: relative;
+}
 
-  & svg {
-    opacity: 0.2;
-    background-color: $bgcolor;
+.catalog__basket-svg {
+  opacity: 0.2;
+  background-color: $bgcolor;
+
+  &:hover {
+    fill: $feature-week;
+    opacity: 1;
   }
 
-}
+  &:active {
+    fill: $feature-week;
+    opacity: 0.3;
+  }
 
-.catalog__basket:hover svg {
-  fill: $feature-week;
-  opacity: 1;
-}
-
-.catalog__basket:active svg {
-  fill: $feature-week;
-  opacity: 0.3;
 }

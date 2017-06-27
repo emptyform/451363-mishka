@@ -252,16 +252,6 @@
   position: relative;
   transition: 0.2s;
 
-  & svg {
-    position: absolute;
-    right: 40px;
-    top: 22px;
-    width: 41px;
-    height: 62px;
-    opacity: 0.5;
-    fill: $content-item-svg;
-  }
-
   &:hover {
     min-height: 108px;
     transition: 0.2s;
@@ -275,10 +265,6 @@
 
   @media ( $tablet ) {
 
-    & svg {
-      right: 35px;
-    }
-
     &:hover {
       min-height: 124px;
     }
@@ -291,20 +277,25 @@
 
 }
 
+.content__item-interior-svg {
+  position: absolute;
+  right: 40px;
+  top: 22px;
+  width: 41px;
+  height: 62px;
+  opacity: 0.5;
+  fill: $content-item-svg;
+
+  @media ( $tablet ) {
+    right: 35px;
+  }
+
+}
+
 .content__item--toys {
   background-color: $content-item-bg;
   position: relative;
   transition: 0.2s;
-
-  & svg {
-    position: absolute;
-    right: 30px;
-    top: 22px;
-    width: 61px;
-    height: 61px;
-    opacity: 0.5;
-    fill: $content-item-svg;
-  }
 
   &:hover {
     min-height: 108px;
@@ -319,10 +310,6 @@
 
   @media ( $tablet ) {
 
-    & svg {
-      right: 35px;
-    }
-
     &:hover {
       min-height: 124px;
     }
@@ -335,13 +322,28 @@
 
 }
 
-.content__item--interior:hover svg,
-.content__item--toys:hover svg {
+.content__item-toys-svg {
+  position: absolute;
+  right: 30px;
+  top: 22px;
+  width: 61px;
+  height: 61px;
+  opacity: 0.5;
+  fill: $content-item-svg;
+
+  @media ( $tablet ) {
+    right: 35px;
+  }
+
+}
+
+.content__item-interior-svg:hover,
+.content__item-toys-svg:hover {
   opacity: 0.7;
 }
 
-.content__item--interior:active svg,
-.content__item--toys:active svg {
+.content__item-interior-svg:active,
+.content__item-toys-svg:active {
   opacity: 0.3;
 }
 

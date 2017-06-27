@@ -17,6 +17,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 77px;
   padding: 0;
   margin: 0 auto;
   background-color: $bgcolor;
@@ -42,15 +43,6 @@
   width: 100%;
   margin-top: -3px;
 
-  & img:hover {
-    opacity: 0.6;
-    cursor: pointer;
-  }
-
-  & img:active {
-    opacity: 0.3;
-  }
-
   @media ( $tablet ) {
     position: absolute;
     z-index: 10;
@@ -59,24 +51,35 @@
     width: auto;
     display: block;
     left: 50/768*100%;
-
-    & img {
-      width: 113px;
-      height: 46px;
-    }
-
   }
 
   @media ( $desktop ) {
     left: 50%;
     transform: translateX(-50%);
     top: 10px;
+  }
 
-    & img {
-      width: 149px;
-      height: 72px;
-    }
+}
 
+.page-header__logo-img {
+
+  &:hover {
+    opacity: 0.6;
+    cursor: pointer;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media ( $tablet ) {
+    width: 113px;
+    height: 46px;
+  }
+
+  @media ( $desktop ) {
+    width: 149px;
+    height: 72px;
   }
 
 }
